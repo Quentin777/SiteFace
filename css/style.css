@@ -293,3 +293,17 @@ div.wrap_columns {
 
 
 .onglet{ font-size: 20em; }
+
+
+#galerie{
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+  padding: 0px 10px 0px 10px;
+  margin: 25px 0px 0px 0px;
+  z-index: 0
+}
+
+#stickyNav.fixed a {
+    color: white;
+  margin-bottom: 10px;}
