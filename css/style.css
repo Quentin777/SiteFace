@@ -93,7 +93,7 @@ header, footer, main, section, article, aside {
 header, footer {
     background-image: url(../img/face3.png);
   background-size: cover;
-
+  border-top: 5px solid #27888F;
   border-bottom: 5px solid #27888F;
 }
 
