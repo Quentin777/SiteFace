@@ -91,7 +91,10 @@ header, footer, main, section, article, aside {
 }
 
 header, footer {
-  background-color: #e74d3c;
+    background-image: url(../img/face3.png);
+  background-size: cover;
+
+  border-bottom: 5px solid #27888F;
 }
 
 header, footer, main {
@@ -169,7 +172,7 @@ nav ul li a:active {
   font-size: 1.6rem;
   letter-spacing: 0.2rem;
   text-transform: uppercase;
-  background: #e74d3c;
+  background: #27888F;
 }
 
 #nav_show:hover {
@@ -307,3 +310,12 @@ div.wrap_columns {
 #stickyNav.fixed a {
     color: white;
   margin-bottom: 10px;}
+
+
+#logo{
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 10px;
+  margin-top: -15px;
+  float: right;
+}
