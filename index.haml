@@ -1,0 +1,46 @@
+%header
+  %h1 Sliding Side Nav v2
+
+%nav
+  %ul.clearfix
+    - (1..24).each do |i|
+      %li{:class => "list-#{i}"}
+        %a{:href => "#", :title => "Nav Item #{i}"} Nav Item #{i}
+
+-# %a#nav_hide{:href => "#", :title => "Close The Navigation"} x
+
+%main
+
+  %a#nav_show{:href => "#", :title => "Show The Navigation"} Menu
+
+  .wrap_columns.clearfix
+
+    %section#main-content
+
+      %article.clearfix
+
+        .content
+          %h2 Content is good.
+          %p Donec sed odio dui. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
+
+        %aside
+          %p The red line is tangential to the curve at the point marked by a red dot.
+
+    %section#sidebar
+      %ul
+        %li An item of interest
+        %li Another thing
+        %li Here is an addition to the list
+        %li I'm getting really tired of making up content
+
+  %section#promotions
+
+    %article.clearfix
+
+      %p Aenean lacinia bibendum nulla sed consectetur. Donec id elit non mi porta gravida at eget metus. Etiam porta sem malesuada magna mollis euismod. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Cras mattis consectetur purus sit amet fermentum.
+
+      %p Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo. Nulla vitae elit libero, a pharetra augue. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
+
+%footer
+
+  %p &copy; Copyright 2014 &mdash; some guy who builds websites.
