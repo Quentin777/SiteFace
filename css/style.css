@@ -348,9 +348,18 @@ div.wrap_columns {
 }
 .firstLi{
   font-size: 20px;
-  margin-bottom: 12px;
+  margin-bottom: 8px;
 }
 #ulFooter ul li a:hover{
-    color:#EFEFEF;
+    color:#26848B;
+}
+/*//////////////////MEDIA QUERY FOOTER//////////////*/
+@media screen and (min-width: 250px) and (max-width: 360px){
+ #ulFooter{
+    flex-direction: column;
+ }
+ #ulFooter ul{
+  margin-top:15px;
+ }
 }
 /*//////////// FIN DU FOOTER ///////////*/
