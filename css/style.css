@@ -83,7 +83,7 @@ header, footer, main {
 html {
   font-family: 'Lato', sans-serif;
   color: #edf1f2;
-  background: #e74d3c;
+  background: transparent;
 }
 
 header, footer, main, section, article, aside {
