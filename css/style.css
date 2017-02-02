@@ -323,7 +323,7 @@ div.wrap_columns {
 /*//////////////////  FOOTER //////////////*/
 #ulFooter{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   text-align: center;
   justify-content: center;
   padding:0;
@@ -337,6 +337,7 @@ div.wrap_columns {
   flex-direction: column;
   margin-left:8px;
   margin-right: 8px;
+  margin-top:15px;
 }
 
 #ulFooter ul li a{
@@ -354,12 +355,12 @@ div.wrap_columns {
     color:#26848B;
 }
 /*//////////////////MEDIA QUERY FOOTER//////////////*/
-@media screen and (min-width: 250px) and (max-width: 360px){
+@media screen and (min-width: 770px){
  #ulFooter{
-    flex-direction: column;
+    flex-direction: row;
  }
  #ulFooter ul{
-  margin-top:15px;
+  margin-top:0px;
  }
 }
 /*//////////// FIN DU FOOTER ///////////*/
