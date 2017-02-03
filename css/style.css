@@ -321,6 +321,9 @@ div.wrap_columns {
   float: right;
 }
 /*//////////////////  FOOTER //////////////*/
+footer{
+  padding-left: 0px;
+}
 #ulFooter{
   display: flex;
   flex-direction: column;
