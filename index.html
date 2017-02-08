@@ -5,6 +5,7 @@
   <title>FACE Bourbonnais</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
 
   
       <link rel="stylesheet" href="css/style.css">
@@ -89,28 +90,31 @@
 </nav>
 <main>
  
-  <div class='wrap_columns clearfix'>
-    <section id='main-content'>
-      <article class='clearfix'>
-        <div class='content'>
-          <h2>FACE is good.</h2>
-          <p>Donec sed odio dui. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
+  <div class="container">             <!--    ZONE PRINCIPAL DU SITE entre nav & footer -->
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9" style="background-color: transparent; font-size: 30px"><img src="img/actu.png" width="350" /></div>
+        <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9" style="border: solid 0px black; background-color: white;">   <!-- zone actu -->
+          <div class="row">
+            <div class="article col-xs-12 col-sm-6 col-md-6 col-lg-6" style="border: solid 0px black">     <!-- Article 1 -->
+              <img src="img/article1.jpeg" class="photo_article" />
+              <h3 class="text_article"> <a href="#" class="liens_article">Le club d’entrepreneurs Face territoire bourbonnais a présenté son programme d’actions 2017 </a></h3>
+            </div>
+             <div class="article col-xs-12 col-sm-6 col-md-6 col-lg-6" style="border: solid 0px black">     <!-- Article 2 -->
+              <img src="img/article2.jpeg" class="photo_article" />
+              <h3 class="text_article"> <a href="#" class="liens_article">Le club d’entrepreneurs FACE veut développer l'emploi dans le numérique</a> </h3>
+            </div>
+             <div class="article col-xs-12 col-sm-6 col-md-6 col-lg-6" style="border: solid 0px black">     <!-- Article 3 -->
+              <img src="img/article1.jpeg" class="photo_article" />
+              <h3 class="text_article"> <a href="#" class="liens_article">Le club d’entrepreneurs Face territoire bourbonnais a présenté son programme d’actions 2017 </a></h3>
+            </div>
+          </div>
         </div>
-        <aside>
-          <p>The red line is tangential to the curve at the point marked by a red dot.</p>
-        </aside>
-      </article>
-    </section>
-    <section id='sidebar'>
-     <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffaceterritoirebourbonnais%2F&tabs=timeline&width=280&height=500&small_header=false&adapt_container_width=true&hide_cover=true&show_facepile=true&appId" width="100%" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
-    </section>
+        <div class="remplissage col-xs-0 col-sm-3 col-md-0 col-lg-0"></div>                 <!--  PLUGIN FACEBOOK -->
+         <iframe class="col-xs-12 col-sm-6 col-md-3 col-lg-3" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffacebook&tabs=timeline&width=270&height=500&small_header=false&adapt_container_width=true&hide_cover=true&show_facepile=false&appId" width="320px" height="500" style="border:none;overflow:hidden;" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+         <div class="remplissage col-xs-0 col-sm-3 col-md-0 col-lg-0"></div>
+    </div>
   </div>
-  <section id='promotions'>
-    <article class='clearfix'>
-      <p>Aenean lacinia bibendum nulla sed consectetur. Donec id elit non mi porta gravida at eget metus. Etiam porta sem malesuada magna mollis euismod. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Cras mattis consectetur purus sit amet fermentum.</p>
-      <p>Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo. Nulla vitae elit libero, a pharetra augue. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
-    </article>
-  </section>
+
 </main>
 <footer>
 <ul id="ulFooter">
