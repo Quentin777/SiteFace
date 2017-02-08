@@ -371,7 +371,7 @@ footer{
 
 
 
-
+/*//////////// zone article ///////////*/
 
 .photo_article{
   max-width: 100%;
@@ -399,3 +399,45 @@ footer{
   transition-duration: .5s; /* on aurait pu écrire 500ms également */
   transform: scale(1.05);
 }
+
+
+
+/*//////////// FIN zone article ///////////*/
+
+
+
+
+/*///////////////// CSS FACEBOOK IFRAME + BUTTON ////////////*/
+#face_button{
+  display: none;
+  margin-top: 20px;
+}
+#face_button:hover{
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 768px){      /*GESTION DE LA FENETRE FACEBOOK SUR MOBILE ET PC*/
+  .facebook{display: none;}
+  #face_button{display: block;}
+}
+
+.btn-facebook {
+    background: #3B5998;
+    border-radius: 2;
+    color: #fff;
+    width: 100%;
+    font-size: 2em;
+  }
+  .btn-facebook:link, .btn-facebook:visited {
+    color: #fff;
+  }
+  .btn-facebook:active, .btn-facebook:hover {
+    background: #263961;
+    color: #fff;
+  }
+
+  .btn-linkedin{
+    background-color: #0082CA;
+    font-size: 20px;
+  }
+  /*///////////////// CSS FACEBOOK IFRAME + BUTTON ////////////*/
