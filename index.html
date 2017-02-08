@@ -6,6 +6,7 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
 
   
       <link rel="stylesheet" href="css/style.css">
@@ -92,24 +93,33 @@
  
   <div class="container">             <!--    ZONE PRINCIPAL DU SITE entre nav & footer -->
     <div class="row">
-      <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9" style="background-color: transparent; font-size: 30px"><img src="img/actu.png" width="350" /></div>
-        <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9" style="border: solid 0px black; background-color: white;">   <!-- zone actu -->
+      <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9" style="font-size: 30px"><img src="img/actu.png" width="350" style="margin-bottom: 10px;" /></div> <!-- /// IMAGE "ACTUALITE" /// -->
+        <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9" style="background-color: white;">   <!-- zone actu -->
+          
           <div class="row">
-            <div class="article col-xs-12 col-sm-6 col-md-6 col-lg-6" style="border: solid 0px black">     <!-- Article 1 -->
+           
+             
+             <div class="article col-xs-12 col-sm-6 col-md-6 col-lg-6">     <!-- Article 1 -->
               <img src="img/article1.jpeg" class="photo_article" />
               <h3 class="text_article"> <a href="index.html" class="liens_article">Le club d’entrepreneurs Face territoire bourbonnais a présenté son programme d’actions 2017 </a></h3>
             </div>
-             <div class="article col-xs-12 col-sm-6 col-md-6 col-lg-6" style="border: solid 0px black">     <!-- Article 2 -->
+            <div class="article col-xs-12 col-sm-6 col-md-6 col-lg-6">     <!-- Article 2 -->
               <img src="img/article2.jpeg" class="photo_article" />
               <h3 class="text_article"> <a href="index.html" class="liens_article">Le club d’entrepreneurs FACE veut développer l'emploi dans le numérique</a> </h3>
             </div>
-             <div class="article col-xs-12 col-sm-6 col-md-6 col-lg-6" style="border: solid 0px black">     <!-- Article 3 -->
+             <div class="article col-xs-12 col-sm-6 col-md-6 col-lg-6">     <!-- Article 3 -->
               <img src="img/article1.jpeg" class="photo_article" />
               <h3 class="text_article"> <a href="index.html" class="liens_article">Le club d’entrepreneurs Face territoire bourbonnais a présenté son programme d’actions 2017 </a></h3>
             </div>
+
           </div>
-        </div>              <!--  PLUGIN FACEBOOK -->
-         <iframe class="col-xs-0 col-sm-0 col-md-3 col-lg-3" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffacebook&tabs=timeline&width=270&height=500&small_header=false&adapt_container_width=true&hide_cover=true&show_facepile=false&appId" width="320px" height="500" style="border:none;overflow:hidden;" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+        </div>  
+                    <!--  PLUGIN FACEBOOK -->
+         <iframe class="col-xs-0 col-sm-0 col-md-3 col-lg-3 facebook" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffacebook&tabs=timeline&width=270&height=600&small_header=false&adapt_container_width=true&hide_cover=true&show_facepile=false&appId" width="320px" height="500" style="border:none;overflow:hidden;" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+
+         <a href="#" title="Facebook" class="btn btn-facebook btn-lg col-xs-12 col-sm-12 col-md-0 col-lg-0" id="face_button"><i class="fa fa-facebook fa-fw"></i> Facebook</a>
+         <a href="#" title="Facebook" class="btn btn-linkedin btn-lg col-xs-12 col-sm-12 col-md-0 col-lg-0" id="face_button"><i class="linkedin"></i> Linkedin</a>
+
     </div>
   </div>
 
