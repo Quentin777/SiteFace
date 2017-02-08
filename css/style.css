@@ -40,9 +40,9 @@ a {
   color: #edf1f2;
 }
 
-a:visited {
+/*a:visited {
   color: #edf1f2;
-}
+}*/
 
 a:hover {
   color: #111617;
@@ -83,7 +83,7 @@ header, footer, main {
 html {
   font-family: 'Lato', sans-serif;
   color: #edf1f2;
-  background: #e74d3c;
+  background: transparent;
 }
 
 header, footer, main, section, article, aside {
@@ -170,7 +170,7 @@ nav ul li a:active {
   margin-bottom: 2rem;
   margin-top: 1.5rem;
   padding: 1rem;
-  font-size: 2rem;
+  font-size: 1.6rem;
   letter-spacing: 0.2rem;
   text-transform: uppercase;
   background: #27888F;
@@ -320,9 +320,82 @@ div.wrap_columns {
   margin-top: -15px;
   float: right;
 }
+/*//////////////////  FOOTER //////////////*/
+footer{
+  padding-left: 0px;
+}
+#ulFooter{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  padding:0;
+  margin-left: -1.8em;
+  padding-bottom: 20px;
+  padding-top:10px;
+}
 
-.list-1{background-color: #192530;}
-.list-6{background-color: #192530;}
-.list-10{background-color: #192530;}
-.list-12{background-color: #192530;}
-.list-17{background-color: #192530;}
+#ulFooter ul{
+  list-style: none;
+  flex-direction: column;
+  margin-left:8px;
+  margin-right: 8px;
+  margin-top:15px;
+}
+
+#ulFooter ul li a{
+    color:grey;
+    text-decoration: none;
+}
+#ulFooter ul .firstLi a{
+    color:#606060;
+}
+.firstLi{
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+#ulFooter ul li a:hover{
+    color:#26848B;
+}
+/*//////////////////MEDIA QUERY FOOTER//////////////*/
+@media screen and (min-width: 770px){
+ #ulFooter{
+    flex-direction: row;
+    margin-left: -1.8em;
+ }
+ #ulFooter ul{
+  margin-top:0px;
+ }
+}
+/*//////////// FIN DU FOOTER ///////////*/
+
+
+
+
+
+.photo_article{
+  max-width: 100%;
+}
+
+.article{
+  padding: 10px 10px 10px 10px;
+}
+
+.text_article{
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 5px 5px 5px 5px;
+}
+.liens_article{
+  color: black;
+  font-size: 1em;
+}
+.liens_article:hover{
+  color: #2B888C;
+  text-decoration: none;
+}
+
+.article:hover{
+   transition-property: all;
+  transition-duration: .5s; /* on aurait pu écrire 500ms également */
+  transform: scale(1.05);
+}
