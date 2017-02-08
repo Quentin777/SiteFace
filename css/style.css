@@ -368,3 +368,34 @@ footer{
  }
 }
 /*//////////// FIN DU FOOTER ///////////*/
+
+
+
+
+
+.photo_article{
+  max-width: 100%;
+}
+
+.article{
+  padding: 10px 10px 10px 10px;
+}
+
+.text_article{
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 5px 5px 5px 5px;
+}
+.liens_article{
+  color: black;
+  font-size: 1em;
+}
+.liens_article:hover{
+  color: #2B888C;
+  text-decoration: none;
+}
+
+.article:hover{
+   transition-property: all;
+  transition-duration: .5s; /* on aurait pu écrire 500ms également */
+  transform: scale(1.05);
+}
