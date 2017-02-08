@@ -1,62 +1,462 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+          text-size-adjust: 100%;
+}
 
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 
-      html {
-  width: 100%; height: 100%;
+html, body {
+  overflow-x: hidden;
 }
 
 body {
-  margin: 0px; padding: 0px;
-  font: 14px 'Trebuchet MS', Helvetica, sans-serif;
-  width: 100%; height: 100%;
+  position: relative;
 }
 
-h1 {
-  margin: 0px;
-  padding: 100px 0px;
-  color: #FFF;
-  font: bold 40px 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
-  letter-spacing: 5px;
-  text-align: center;
+h1, h2, h3, h4, h5, h6, ul, li, p {
+  margin: 0;
 }
+
+h1{font-size: 25px; margin-top: 20px;}
 
 p {
-  margin: 0px;
-  padding: 10px 20px;
-  line-height: 1.5;
+  font-size: 1.6rem;
+  line-height: 1.4;
 }
 
-#header {
-  margin: 0px; padding: 0px;
-  position: relative;
-  background-image: url(../img/face2.png);
+li {
+  font-size: 1.4rem;
+}
+
+a {
+  font-weight: 700;
+  text-decoration: none;
+  color: #edf1f2;
+}
+
+/*a:visited {
+  color: #edf1f2;
+}*/
+
+a:hover {
+  color: #111617;
+}
+
+a:active {
+  color: #dce3e5;
+}
+
+.clearfix::before, .clearfix::after {
+  content: " ";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+a {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+nav {
+  -webkit-transition: -webkit-transform 0.4s ease-in-out;
+  transition: -webkit-transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
+}
+
+header, footer, main {
+  -webkit-transition: opacity 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
+  transition: opacity 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
+  transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
+  transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
+}
+
+header{
+  min-height: 120px;
+}
+
+html {
+  font-family: 'Lato', sans-serif;
+  color: #edf1f2;
+  background: transparent;
+}
+
+header, footer, main, section, article, aside {
+  padding: 2rem;
+}
+
+header, footer {
+    background-image: url(../img/face3.png);
   background-size: cover;
-  width: 100%; height: 250px;
+  border-top: 5px solid #27888F;
+  border-bottom: 5px solid #27888F;
 }
 
-#navbar {
-  margin: 0px; padding: 0px;
-  position: relative;
+header, footer, main {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+
+header h1 {
+  font-size: 2.8rem;
+  letter-spacing: 0.1rem;
+}
+
+nav {
+  z-index: 1000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20rem;
+  height: 100%;
+  background: #2b3d4f;
+  -webkit-transform: translate3d(-20rem, 0, 0);
+          transform: translate3d(-20rem, 0, 0);
+}
+
+nav ul {
+  padding: 2rem 0;
+  height: 100vh;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+nav ul li {
+  margin-bottom: 0.8rem;
+}
+
+nav ul li:last-child,
+nav ul li:only-child {
+  margin-bottom: 0;
+}
+
+nav ul li a {
+  display: inline-block;
+  padding: 0.6rem 2rem;
+  font-size: 1.6rem;
+}
+
+nav ul li a:hover {
+  padding-left: 2.6rem;
+}
+
+nav ul li a:active {
+  padding-left: 2.2rem;
+}
+
+/*
+// --- Nav Hide --- \
+#nav_hide {
+  display: block;
+  z-index: 1001;
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  padding: 1rem;
+  font-size: 3.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  opacity: 0;
+  visibility: hidden;
+}
+*/
+#nav_show {
+  display: none;
+  margin-bottom: 2rem;
+  margin-top: 1.5rem;
+  padding: 1rem;
+  font-size: 1.6rem;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
   background: #27888F;
-  text-align: center;
-  z-index: 3;
-  width: 100%; height: 50px;
 }
 
-#navbar.fixedattop {
-  position: fixed; top: 0px;
+#nav_show:hover {
+  opacity: 0.9;
+}
+
+#nav_show:active {
+  opacity: 0.96;
+}
+
+/* --- Toggled Class --- */
+body.nav_toggled {
+  position: fixed;
+  overflow-y: hidden;
+}
+
+body.nav_toggled #nav_hide {
+  opacity: 1;
+  visibility: visible;
+}
+
+body.nav_toggled nav {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+
+body.nav_toggled header, body.nav_toggled footer, body.nav_toggled main {
+  opacity: 0.8;
+  -webkit-transform: translate3d(200px, 0, 0);
+          transform: translate3d(200px, 0, 0);
+}
+
+main {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  background: #dce3e5;
+}
+
+section {
+  background: #3398db;
+}
+
+article {
+  background: #287fb8;
+}
+
+div.wrap_columns {
+  margin-bottom: 2rem;
+}
+
+#main-content {
+  margin-bottom: 2rem;
+}
+
+#main-content article div.content {
+  padding: 2rem;
+  background: #2b3d4f;
+}
+
+#main-content article div.content h2 {
+  margin-bottom: 1rem;
+  font-size: 2.2rem;
+}
+
+#main-content article aside.subcontent {
+  background: #111617;
+}
+
+#main-content article aside.subcontent p {
+  font-size: 1.3rem;
+}
+
+#sidebar ul {
+  padding-left: 1.6rem;
+}
+
+#sidebar ul li {
+  margin-bottom: 0.8rem;
+}
+
+#sidebar ul li:last-child, #sidebar ul li:only-child {
+  margin-bottom: 0;
+}
+
+#promotions p {
+  margin-bottom: 2rem;
+}
+
+#promotions p:last-child,
+#promotions p:only-child {
+  margin-bottom: 0;
+}
+
+@media only screen and (min-width: 35.5em) {
+  #main-content,
+  #sidebar,
+  #main-content article div.content,
+  #main-content article aside.subcontent {
+    float: left;
+  }
+
+  #main-content {
+    margin-right: 2%;
+    margin-bottom: 0;
+    width: 66%;
+  }
+
+  #main-content article div.content {
+    margin-right: 2%;
+    width: 66%;
+  }
+
+  #main-content article aside.subcontent {
+    width: 32%;
+  }
+
+  #sidebar {
+    width: 32%;
+  }
 }
 
 
-#content {
+.onglet{ font-size: 20em; }
+
+
+#galerie{
+  padding: 0px;
   margin: 0px;
-  padding: 20px 0px 0px 0px;
+  list-style: none;
+  padding: 0px 10px 0px 10px;
+  margin: 25px 0px 0px 0px;
+  z-index: 0
+}
+
+#stickyNav.fixed a {
+    color: white;
+  margin-bottom: 10px;}
+
+
+#logo{
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 10px;
+  margin-top: 0px;
+  float: right;
+}
+/*//////////////////  FOOTER //////////////*/
+footer{
+  padding-left: 0px;
+}
+#ulFooter{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  padding:0;
+  margin-left: -1.8em;
+  padding-bottom: 20px;
+  padding-top:10px;
+}
+
+#ulFooter ul{
+  list-style: none;
+  flex-direction: column;
+  margin-left:8px;
+  margin-right: 8px;
+  margin-top:15px;
+}
+
+#ulFooter ul li a{
+    color:grey;
+    text-decoration: none;
+}
+#ulFooter ul .firstLi a{
+    color:#606060;
+}
+.firstLi{
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+#ulFooter ul li a:hover{
+    color:#26848B;
+}
+/*//////////////////MEDIA QUERY FOOTER//////////////*/
+@media screen and (min-width: 770px){
+ #ulFooter{
+    flex-direction: row;
+    margin-left: -1.8em;
+ }
+ #ulFooter ul{
+  margin-top:0px;
+ }
+}
+/*//////////// FIN DU FOOTER ///////////*/
+
+
+
+/*//////////// zone article ///////////*/
+
+.photo_article{
+  max-width: 100%;
+}
+
+.article{
+  padding: 10px 10px 10px 10px;
+}
+
+.text_article{
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 5px 5px 5px 5px;
+}
+.liens_article{
+  color: black;
+  font-size: 1em;
+}
+.liens_article:hover{
+  color: #2B888C;
+  text-decoration: none;
+}
+
+.article:hover{
+   transition-property: all;
+  transition-duration: .5s; /* on aurait pu écrire 500ms également */
+  transform: scale(1.05);
 }
 
 
 
-/*/////////////////////////////  CSS  NAVBAR /////////////////////////////////////*/
+/*//////////// FIN zone article ///////////*/
 
 
+
+
+/*///////////////// CSS FACEBOOK IFRAME + BUTTON ////////////*/
+#face_button{
+  display: none;
+  margin-top: 20px;
+}
+#face_button:hover{
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 768px){      /*GESTION DE LA FENETRE FACEBOOK SUR MOBILE ET PC*/
+  .facebook{display: none;}
+  #face_button{display: block;}
+}
+
+.btn-facebook {
+    background: #3B5998;
+    border-radius: 2;
+    color: #fff;
+    width: 100%;
+    font-size: 2em;
+  }
+  .btn-facebook:link, .btn-facebook:visited {
+    color: #fff;
+  }
+  .btn-facebook:active, .btn-facebook:hover {
+    background: #263961;
+    color: #fff;
+  }
+
+  .btn-linkedin{
+    background-color: #0082CA;
+    font-size: 20px;
+  }
+  /*///////////////// CSS FACEBOOK IFRAME + BUTTON ////////////*/
+
+
+
+  /*/////////////////////////////  CSS  NAVBAR /////////////////////////////////////*/
+
+#navbar{
+
+}
+
+#menu-demo2{
+  background-color: #27888f;
+}
 #menu-demo2, #menu-demo2 ul{
 padding:0;
 margin:0;
@@ -151,53 +551,10 @@ text-transform:inherit;
 color:white;
 }
 
+
+@media screen and (max-width: 960px){      /*GESTION DE LA FENETRE FACEBOOK SUR MOBILE ET PC*/
+  #navbar{display: none;}
+  #nav_show{display: inline-block;}
+}
+
 /*/////////////////////////////  CSS  NAVBAR FIN /////////////////////////////////////*/
-
-#galerie{
-  padding: 0px;
-  margin: 0px;
-  list-style: none;
-  padding: 0px 10px 0px 10px;
-  margin: 25px 0px 0px 0px;
-  z-index: 0
-}
-
-#stickyNav.fixed a {
-    color: white;
-  margin-bottom: 10px;}
-
-  /*//////////////////  FOOTER //////////////*/
-#ulFooter{
-  display: flex;
-  flex-direction: row;
-  text-align: center;
-  justify-content: center;
-  padding:0;
-  margin:0;
-  background-color: #D2CAEC;
-  padding-bottom: 20px;
-  padding-top:10px;
-}
-
-#ulFooter ul{
-  list-style: none;
-  flex-direction: column;
-  margin-left:8px;
-  margin-right: 8px;
-}
-
-#ulFooter ul li a{
-    color:grey;
-    text-decoration: none;
-}
-#ulFooter ul .firstLi a{
-    color:#606060;
-}
-.firstLi{
-  font-size: 20px;
-  margin-bottom: 12px;
-}
-#ulFooter ul li a:hover{
-    color:#EFEFEF;
-}
-/*//////////// FIN DU FOOTER ///////////*/
