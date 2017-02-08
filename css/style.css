@@ -246,6 +246,11 @@ div.wrap_columns {
   font-size: 1.3rem;
 }
 
+#body-row{
+  flex-direction: row;
+}
+
+
 #sidebar ul {
   padding-left: 1.6rem;
 }
@@ -368,3 +373,22 @@ footer{
  }
 }
 /*//////////// FIN DU FOOTER ///////////*/
+
+
+
+/*content page Fabrik*/
+
+#info{
+  margin-top: 2em;
+  background-color: white;
+  color: #003300;
+   text-indent: 20px;
+}
+
+#info img{
+  float: right;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+/* FIN content page Fabrik*/
