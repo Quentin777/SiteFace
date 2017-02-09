@@ -471,8 +471,17 @@ font-size: 20px;
 #menu-demo2 li{
 display:inline-block;
 position:relative;
-
 }
+#menu-demo2 li ul li a{
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 15px;
+}
+#menu-demo2 li a{
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 20px;
+  border-right: 1px solid white;
+}
+#first{border-left: solid 1px white;}
 #menu-demo2 ul li{
 display:inherit;
 }
@@ -557,4 +566,6 @@ color:white;
   #nav_show{display: inline-block;}
 }
 
+@media screen and (min-width: 960px){ 
+header{border-bottom: none;}}
 /*/////////////////////////////  CSS  NAVBAR FIN /////////////////////////////////////*/
