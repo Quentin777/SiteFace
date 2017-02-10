@@ -391,4 +391,81 @@ footer{
   margin-bottom: 20px;
 }
 
-/* FIN content page Fabrik*/
+/* FIN  content page Fabrik*/
+
+#photos{
+  margin-top: 2em;
+  flex-direction: row;
+  background-color: white;
+  color: #003300;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.photo{
+  flex-direction: row;
+}
+
+#size{
+  margin: 10px;
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+}
+
+#photos img:hover{
+  width: 200px;
+  height: 200px;
+}
+
+@keyframes rotate{
+  from{transform: rotate(360deg);}
+  to{from{transform: rotate(0deg);}}
+}
+
+
+
+#img-anim{
+  display: flex;
+  float: right;
+  justify-content: center;
+
+  
+}
+
+
+#i111{
+  margin: 0 !important;
+  width: 25em;
+  height: 25em;
+  float: right;
+  animation-name: rotate;
+  animation-duration: 100s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  z-index: 3;
+ 
+}
+#i222{
+  margin: 0.3em !important;
+  display: flex;
+  align-self: center;
+  align-items: center;
+  width: 7em;
+  position: absolute;
+  z-index: 99;
+}
+
+
+
+#h1-lettre{
+  font-size: 3em;
+  color: #27888F !important;
+}
+
+#i222:hover{
+  transition-duration: 2s;
+  width: 8em;
+}

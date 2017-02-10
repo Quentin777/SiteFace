@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>FACE Bourbonnais</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/galerie.css">
+
+
+  
+</head>
+
+<body>
+  <header>
+<a href='#' id='nav_show' title='Show The Navigation'>Menu</a>
+   <div id="logo"><img src="img/logo-face.png" width="160"/></div>
+</header>
+<nav>
+  <ul class='clearfix'>
+    <li class='list-1'>
+      <a href='index.html' title='Nav Item 1'><h1>Accueil</h1></a>
+    </li>
+    <li class='list-2'>
+      <a href='#' title='Nav Item 2'>Fil d'actualité</a>
+    </li>
+    <li class='list-3'>
+      <a href='#' title='Nav Item 3'>Reseaux sociaux</a>
+    </li>
+    <li class='list-4'>
+      <a href='#' title='Nav Item 4'>Press</a>
+    </li>
+    <li class='list-5'>
+      <a href='#' title='Nav Item 5'>Agenda</a>
+    </li>
+    <li class='list-6'>
+      <a href='presentation.html' title='Nav Item 6'><h1>Presentation</h1></a>
+    </li>
+    <li class='list-7'>
+      <a href='#' title='Nav Item 7'>Histoire</a>
+    </li>
+    <li class='list-8'>
+      <a href='#' title='Nav Item 8'>contact</a>
+    </li>
+    <li class='list-9'>
+      <a href='#' title='Nav Item 9'>Palmarès</a>
+    </li>
+    <li class='list-10'>
+      <a href='galerie.html' title='Nav Item 10'><h1>Galerie</h1></a>
+    </li>
+    <li class='list-11'>
+      <a href='#' title='Nav Item 11'>Médias</a>
+    </li>
+    <li class='list-12'>
+      <a href='partenariat.html' title='Nav Item 12'><h1>Partenariat</h1></a>
+    </li>
+    <li class='list-13'>
+      <a href='#' title='Nav Item 13'>Les Entreprises</a>
+    </li>
+    <li class='list-14'>
+      <a href='#' title='Nav Item 14'>Les Associations</a>
+    </li>
+    <li class='list-15'>
+      <a href='#' title='Nav Item 15'>Les Particuliers</a>
+    </li>
+    <li class='list-16'>
+      <a href='#' title='Nav Item 16'>Les Institutions</a>
+    </li>
+    <li class='list-17'>
+      <a href='la-fabrik.html' title='Nav Item 17'><h1>La Fabrik</h1></a>
+    </li>
+    <li class='list-18'>
+      <a href='#' title='Nav Item 18'>Présentation</a>
+    </li>
+    <li class='list-19'>
+      <a href='#' title='Nav Item 19'>Actualité</a>
+    </li>
+    <li class='list-20'>
+      <a href='#' title='Nav Item 20'>Reseaux sociaux</a>
+    </li>
+    <li class='list-21'>
+      <a href='#' title='Nav Item 21'>Photos</a>
+    </li>
+    <li class='list-22'>
+      <a href='#' title='Nav Item 22'>Projets</a>
+    </li>
+  </ul>
+</nav>
+<main>
+  <div class='wrap_columns clearfix'>
+  <div class='wrap_columns clearfix'>
+    <div id="column2">
+    <section id='main-content' >
+          <div class="content" style="text-align: center;">
+      <h1>Galerie FABRIK</h1><br/><br/><br/>
+<center>
+    <div id="msg_slideshow" class="msg_slideshow">
+      <div id="msg_wrapper" class="msg_wrapper">
+        </div>
+      <div id="msg_controls" class="msg_controls"><!-- right has to animate to 15px, default -110px -->
+        <a href="#" id="msg_grid" class="msg_grid"></a>
+        <a href="#" id="msg_prev" class="msg_prev"></a>
+        <a href="#" id="msg_pause_play" class="msg_pause"></a><!-- has to change to msg_play if paused-->
+        <a href="#" id="msg_next" class="msg_next"></a>
+      </div>
+      <div id="msg_thumbs" class="msg_thumbs"><!-- top has to animate to 0px, default -230px -->
+          <div class="msg_thumb_wrapper">
+          <a href="#"><img src="images/thumbs/1.jpg" alt="images/1.jpg"/></a>
+          <a href="#"><img src="images/thumbs/2.jpg" alt="images/2.jpg"/></a>
+          <a href="#"><img src="images/thumbs/3.jpg" alt="images/3.jpg"/></a>
+          <a href="#"><img src="images/thumbs/4.jpg" alt="images/4.jpg"/></a>
+          <a href="#"><img src="images/thumbs/5.jpg" alt="images/5.jpg"/></a>
+          <a href="#"><img src="images/thumbs/6.jpg" alt="images/6.jpg"/></a>
+          </div>
+          <div class="msg_thumb_wrapper" style="display:none;">
+          <a href="#"><img src="images/thumbs/7.jpg" alt="images/7.jpg"/></a>
+          <a href="#"><img src="images/thumbs/8.jpg" alt="images/8.jpg"/></a>
+          <a href="#"><img src="images/thumbs/9.jpg" alt="images/9.jpg"/></a>
+          <a href="#"><img src="images/thumbs/10.jpg" alt="images/10.jpg"/></a>
+          <a href="#"><img src="images/thumbs/11.jpg" alt="images/11.jpg"/></a>
+          <a href="#"><img src="images/thumbs/12.jpg" alt="images/12.jpg"/></a>
+        </div>
+        <a href="#" id="msg_thumb_next" class="msg_thumb_next"></a>
+        <a href="#" id="msg_thumb_prev" class="msg_thumb_prev"></a>
+        <a href="#" id="msg_thumb_close" class="msg_thumb_close"></a>
+        <span class="msg_loading"></span><!-- show when next thumb wrapper loading -->
+        </div>
+      </div>
+</center>
+
+        <!-- The JavaScript -->
+        <script type="text/javascript">
+            $(function() {
+        /**
+        * interval : time between the display of images
+        * playtime : the timeout for the setInterval function
+        * current  : number to control the current image
+        * current_thumb : the index of the current thumbs wrapper
+        * nmb_thumb_wrappers : total number of thumbs wrappers
+        * nmb_images_wrapper : the number of images inside of each wrapper
+        */
+        var interval      = 4000;
+        var playtime;
+        var current       = 0;
+        var current_thumb     = 0;
+        var nmb_thumb_wrappers  = $('#msg_thumbs .msg_thumb_wrapper').length;
+        var nmb_images_wrapper  = 6;
+        /**
+        * start the slideshow
+        */
+        play();
+        
+        /**
+        * show the controls when 
+        * mouseover the main container
+        */
+        slideshowMouseEvent();
+        function slideshowMouseEvent(){
+          $('#msg_slideshow').unbind('mouseenter')
+                     .bind('mouseenter',showControls)
+                     .andSelf()
+                     .unbind('mouseleave')
+                     .bind('mouseleave',hideControls);
+          }
+        
+        /**
+        * clicking the grid icon,
+        * shows the thumbs view, pauses the slideshow, and hides the controls
+        */
+        $('#msg_grid').bind('click',function(e){
+          hideControls();
+          $('#msg_slideshow').unbind('mouseenter').unbind('mouseleave');
+          pause();
+          $('#msg_thumbs').stop().animate({'top':'0px'},500);
+          e.preventDefault();
+        });
+        
+        /**
+        * closing the thumbs view,
+        * shows the controls
+        */
+        $('#msg_thumb_close').bind('click',function(e){
+          showControls();
+          slideshowMouseEvent();
+          $('#msg_thumbs').stop().animate({'top':'-230px'},500);
+          e.preventDefault();
+        });
+        
+        /**
+        * pause or play icons
+        */
+        $('#msg_pause_play').bind('click',function(e){
+          var $this = $(this);
+          if($this.hasClass('msg_play'))
+            play();
+          else
+            pause();
+          e.preventDefault(); 
+        });
+        
+        /**
+        * click controls next or prev,
+        * pauses the slideshow, 
+        * and displays the next or prevoius image
+        */
+        $('#msg_next').bind('click',function(e){
+          pause();
+          next();
+          e.preventDefault();
+        });
+        $('#msg_prev').bind('click',function(e){
+          pause();
+          prev();
+          e.preventDefault();
+        });
+        
+        /**
+        * show and hide controls functions
+        */
+        function showControls(){
+          $('#msg_controls').stop().animate({'right':'15px'},500);
+        }
+        function hideControls(){
+          $('#msg_controls').stop().animate({'right':'-110px'},500);
+        }
+        
+        /**
+        * start the slideshow
+        */
+        function play(){
+          next();
+          $('#msg_pause_play').addClass('msg_pause').removeClass('msg_play');
+          playtime = setInterval(next,interval)
+        }
+        
+        /**
+        * stops the slideshow
+        */
+        function pause(){
+          $('#msg_pause_play').addClass('msg_play').removeClass('msg_pause');
+          clearTimeout(playtime);
+        }
+        
+        /**
+        * show the next image
+        */
+        function next(){
+          ++current;
+          showImage('r');
+        }
+        
+        /**
+        * shows the previous image
+        */
+        function prev(){
+          --current;
+          showImage('l');
+        }
+        
+        /**
+        * shows an image
+        * dir : right or left
+        */
+        function showImage(dir){
+          /**
+          * the thumbs wrapper being shown, is always 
+          * the one containing the current image
+          */
+          alternateThumbs();
+          
+          /**
+          * the thumb that will be displayed in full mode
+          */
+          var $thumb = $('#msg_thumbs .msg_thumb_wrapper:nth-child('+current_thumb+')')
+                .find('a:nth-child('+ parseInt(current - nmb_images_wrapper*(current_thumb -1)) +')')
+                .find('img');
+          if($thumb.length){
+            var source = $thumb.attr('alt');
+            var $currentImage = $('#msg_wrapper').find('img');
+            if($currentImage.length){
+              $currentImage.fadeOut(function(){
+                $(this).remove();
+                $('<img />').load(function(){
+                  var $image = $(this);
+                  resize($image);
+                  $image.hide();
+                  $('#msg_wrapper').empty().append($image.fadeIn());
+                }).attr('src',source);
+              });
+            }
+            else{
+              $('<img />').load(function(){
+                  var $image = $(this);
+                  resize($image);
+                  $image.hide();
+                  $('#msg_wrapper').empty().append($image.fadeIn());
+              }).attr('src',source);
+            }
+                
+          }
+          else{ //this is actually not necessary since we have a circular slideshow
+            if(dir == 'r')
+              --current;
+            else if(dir == 'l')
+              ++current;  
+            alternateThumbs();
+            return;
+          }
+        }
+        
+        /**
+        * the thumbs wrapper being shown, is always 
+        * the one containing the current image
+        */
+        function alternateThumbs(){
+          $('#msg_thumbs').find('.msg_thumb_wrapper:nth-child('+current_thumb+')')
+                  .hide();
+          current_thumb = Math.ceil(current/nmb_images_wrapper);
+          /**
+          * if we reach the end, start from the beggining
+          */
+          if(current_thumb > nmb_thumb_wrappers){
+            current_thumb   = 1;
+            current     = 1;
+          } 
+          /**
+          * if we are at the beggining, go to the end
+          */          
+          else if(current_thumb == 0){
+            current_thumb   = nmb_thumb_wrappers;
+            current     = current_thumb*nmb_images_wrapper;
+          }
+          
+          $('#msg_thumbs').find('.msg_thumb_wrapper:nth-child('+current_thumb+')')
+                  .show();  
+        }
+        
+        /**
+        * click next or previous on the thumbs wrapper
+        */
+        $('#msg_thumb_next').bind('click',function(e){
+          next_thumb();
+          e.preventDefault();
+        });
+        $('#msg_thumb_prev').bind('click',function(e){
+          prev_thumb();
+          e.preventDefault();
+        });
+        function next_thumb(){
+          var $next_wrapper = $('#msg_thumbs').find('.msg_thumb_wrapper:nth-child('+parseInt(current_thumb+1)+')');
+          if($next_wrapper.length){
+            $('#msg_thumbs').find('.msg_thumb_wrapper:nth-child('+current_thumb+')')
+                    .fadeOut(function(){
+                      ++current_thumb;
+                      $next_wrapper.fadeIn();                 
+                    });
+          }
+        }
+        function prev_thumb(){
+          var $prev_wrapper = $('#msg_thumbs').find('.msg_thumb_wrapper:nth-child('+parseInt(current_thumb-1)+')');
+          if($prev_wrapper.length){
+            $('#msg_thumbs').find('.msg_thumb_wrapper:nth-child('+current_thumb+')')
+                    .fadeOut(function(){
+                      --current_thumb;
+                      $prev_wrapper.fadeIn();                 
+                    });
+          }       
+        }
+        
+        /**
+        * clicking on a thumb, displays the image (alt attribute of the thumb)
+        */
+        $('#msg_thumbs .msg_thumb_wrapper > a').bind('click',function(e){
+          var $this     = $(this);
+          $('#msg_thumb_close').trigger('click');
+          var idx     = $this.index();
+          var p_idx   = $this.parent().index();
+          current     = parseInt(p_idx*nmb_images_wrapper + idx + 1);
+          showImage();
+          e.preventDefault();
+        }).bind('mouseenter',function(){
+          var $this     = $(this);
+          $this.stop().animate({'opacity':1});
+        }).bind('mouseleave',function(){
+          var $this     = $(this);  
+          $this.stop().animate({'opacity':0.5});
+        });
+        
+        /**
+        * resize the image to fit in the container (400 x 400)
+        */
+        function resize($image){
+          var theImage  = new Image();
+          theImage.src  = $image.attr("src");
+          var imgwidth  = theImage.width;
+          var imgheight   = theImage.height;
+          
+          var containerwidth  = 400;
+          var containerheight = 400;
+                
+          if(imgwidth > containerwidth){
+            var newwidth = containerwidth;
+            var ratio = imgwidth / containerwidth;
+            var newheight = imgheight / ratio;
+            if(newheight > containerheight){
+              var newnewheight = containerheight;
+              var newratio = newheight/containerheight;
+              var newnewwidth =newwidth/newratio;
+              theImage.width = newnewwidth;
+              theImage.height= newnewheight;
+            }
+            else{
+              theImage.width = newwidth;
+              theImage.height= newheight;
+            }
+          }
+          else if(imgheight > containerheight){
+            var newheight = containerheight;
+            var ratio = imgheight / containerheight;
+            var newwidth = imgwidth / ratio;
+            if(newwidth > containerwidth){
+              var newnewwidth = containerwidth;
+              var newratio = newwidth/containerwidth;
+              var newnewheight =newheight/newratio;
+              theImage.height = newnewheight;
+              theImage.width= newnewwidth;
+            }
+            else{
+              theImage.width = newwidth;
+              theImage.height= newheight;
+            }
+          }
+          $image.css({
+            'width' :theImage.width,
+            'height':theImage.height
+          });
+        }
+            });
+        </script>
+    </section>
+
+    </div>
+    <section id='sidebar'>
+     <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffaceterritoirebourbonnais%2F&tabs=timeline&width=280&height=500&small_header=false&adapt_container_width=true&hide_cover=true&show_facepile=true&appId" width="100%" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+    </section>
+    </div>
+  </div>
+  </div>
+  <section id='promotions'>
+    <article class='clearfix'>
+      <p>Aenean lacinia bibendum nulla sed consectetur. Donec id elit non mi porta gravida at eget metus. Etiam porta sem malesuada magna mollis euismod. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Cras mattis consectetur purus sit amet fermentum.</p>
+      <p>Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo. Nulla vitae elit libero, a pharetra augue. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+    </article>
+  </section>
+</main>
+<footer>
+<ul id="ulFooter">
+     <ul> 
+          <li class="firstLi"><a href="index.html">Accueil</a></li>
+          <li><a href="index.html">Fil d'Actualité</a></li>
+          <li><a href="index.html">Réseaux Sociaux</a></li>
+          <li><a href="index.html">Presse</a></li>
+          <li><a href="index.html">Agenda</a></li>
+     </ul>
+     <ul>
+          <li class="firstLi"><a href="index.html">Présentation</a></li>
+          <li><a href="presentation.html">Histoire</a></li>
+          <li><a href="presentation.html">Contact</a></li>
+          <li><a href="presentation.html">Palmarès</a></li>
+     </ul>
+     <ul>
+          <li class="firstLi"><a href="index.html">Galerie</a></li>
+          <li><a href="galerie-photo-face.html">Photos</a></li>
+          <li><a href="#">Médias</a></li>
+     </ul>
+     <ul>
+          <li class="firstLi"><a href="index.html">Partenariat</a></li>
+          <li><a href="#">Les Entreprises</a></li>
+          <li><a href="#">Les Associations</a></li>
+          <li><a href="#">Les Particuliers</a></li>
+          <li><a href="#">Les Institutions</a></li>
+     </ul>
+     <ul>
+          <li class="firstLi"><a href="index.html">La Fabrik</a></li>
+          <li><a href="#">Présentation</a></li>
+          <li><a href="#">Actualité</a></li>
+          <li><a href="#">Reseaux sociaux</a></li>
+          <li><a href="#">Photos</a></li>
+          <li><a href="#">Projets</a></li>
+     </ul>
+     <ul>
+          <li class="firstLi"><a href="index.html">Mentions légales</a></li>
+          <li><a href="#">Page 1-1</a></li>
+          <li><a href="#">Page 1-2</a></li>
+          <li><a href="#">Page 1-3</a></li>
+     </ul>
+</ul>
+</footer>
+  
+
+    <script src="js/index.js"></script>
+
+</body>
+</html>
