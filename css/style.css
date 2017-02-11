@@ -840,7 +840,7 @@ header{border-bottom: none;}}
 ///////////////////////// page partenariat //////////////////////////////*/
 
 #partenariat_logo{margin-bottom: 30px;}
-#politique_partenariat{margin-bottom: 100px;}
+#politique_partenariat{margin-bottom: 50px;}
 
 #association{background-image: url(../img/association.png);background-size: 100% 100%; color: white; font-size: 20px;text-align: center;height: 80px;}  /*// bouton qui agrandit les div //*/
 #entreprise{background-image: url(../img/entreprise.png);background-size: 100% 100%; color: white; font-size: 20px;text-align: center; height: 80px;}
@@ -861,3 +861,6 @@ header{border-bottom: none;}}
 #partenaire_div{margin-bottom: 10px; border: 3px solid #2B888C; background-color: white; padding-bottom: 10px; padding-top: 10px;}
 
 #partenaire_div h1{margin-bottom: 5px; box-shadow: 5px 5px 5px white;}
+
+
+#fermer_partenaire{position:fixed; bottom: 10px; right: 10px;}
