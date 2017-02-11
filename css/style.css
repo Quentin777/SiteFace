@@ -850,12 +850,12 @@ header{border-bottom: none;}}
 #entreprise:hover{transform: scale(1.1); margin-bottom: 10px;box-shadow: 5px 5px 20px black;}
 #institution:hover{transform: scale(1.1); margin-bottom: 10px;box-shadow: 5px 5px 20px black;}
 
-#text_association{background-color: white; font-size: 20px; overflow: hidden; height: 0%; margin-bottom: 10px; background-color: transparent;}  /*/// Div avec les partenaire dedans ///*/
-#text_entreprise{background-color: white; font-size: 20px; overflow: hidden; height: 0%; margin-bottom: 10px; background-color: transparent;}
+#text_association{background-color: white; font-size: 20px; overflow: hidden; height: 0px; margin-bottom: 10px; background-color: transparent;}  /*/// Div avec les partenaire dedans ///*/
+#text_entreprise{background-color: white; font-size: 20px; overflow: hidden; height: 0px; margin-bottom: 10px; background-color: transparent;}
 #text_institution{background-color: white; font-size: 20px; overflow: hidden; height: 0px; background-color: transparent;}
 
-#text_association:target {-webkit-transition: all .5s ease-in;transition: all .5s ease-in; height: 100px; background-color: #2B888C;} /*/// Quand la div est target par le <a>, celle ci s'aggrandit ///*/
-#text_entreprise:target {-webkit-transition: all .5s ease-in;transition: all .5s ease-in; height: 100px; background-color: #2B888C;}
+#text_association:target {-webkit-transition: all .5s ease-in;transition: all .5s ease-in; height: auto; background-color: #2B888C;} /*/// Quand la div est target par le <a>, celle ci s'aggrandit ///*/
+#text_entreprise:target {-webkit-transition: all .5s ease-in;transition: all .5s ease-in; height: auto; background-color: #2B888C;}
 #text_institution:target {-webkit-transition: all .5s ease-in;transition: all .5s ease-in; height: 100%; background-color: #2B888C;}
 
 #partenaire_div{margin-bottom: 10px; border: 3px solid #2B888C; background-color: white; padding-bottom: 10px; padding-top: 10px;}
