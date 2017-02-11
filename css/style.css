@@ -96,10 +96,13 @@ header, footer, main, section, article, aside {
 
 header, footer {
     background-image: url(../img/face3.png);
-  background-size: cover;
   border-top: 5px solid #27888F;
   border-bottom: 5px solid #27888F;
 }
+
+header{background-size: cover;}
+
+footer{ background-image: url(../img/face3.png); background-repeat: repeat; background-size: 100% 300px; }
 
 header, footer, main {
   -webkit-transform: translate3d(0, 0, 0);
@@ -832,3 +835,25 @@ header{border-bottom: none;}}
   animation-name: flipInX;
 }
 /*////////////////////// ANIMATION FIN ! ! ! ! ///////////////////////////////*/
+
+/*
+///////////////////////// page partenariat //////////////////////////////*/
+
+#partenariat_logo{margin-bottom: 30px;}
+#politique_partenariat{margin-bottom: 100px;}
+
+#association{background-image: url(../img/association.png);background-size: 100% 100%; color: white; font-size: 20px;text-align: center;height: 80px;}  /*// bouton qui agrandit les div //*/
+#entreprise{background-image: url(../img/entreprise.png);background-size: 100% 100%; color: white; font-size: 20px;text-align: center; height: 80px;}
+#institution{background-image: url(../img/institution.png);background-size: 100% 100%; color: white; font-size: 20px;text-align: center; height: 80px;}
+
+#text_association{background-color: white; font-size: 20px; overflow: hidden; height: 0%; margin-bottom: 10px;}  /*/// Div avec les partenaire dedans ///*/
+#text_entreprise{background-color: white; font-size: 20px; overflow: hidden; height: 0%; margin-bottom: 10px;}
+#text_institution{background-color: white; font-size: 20px; overflow: hidden; height: 0px; background-color: #2B888C;}
+
+#text_association:target {-webkit-transition: all .5s ease-in;transition: all .5s ease-in; height: 100px;} /*/// Quand la div est target par le <a>, celle ci s'aggrandit ///*/
+#text_entreprise:target {-webkit-transition: all .5s ease-in;transition: all .5s ease-in; height: 100px;}
+#text_institution:target {-webkit-transition: all .5s ease-in;transition: all .5s ease-in; height: 100%;}
+
+#partenaire_div{margin-bottom: 10px; border: 3px solid #2B888C; background-color: white; padding-bottom: 10px; padding-top: 10px;}
+
+#partenaire_div h1{margin-bottom: 5px;}
