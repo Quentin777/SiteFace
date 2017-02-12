@@ -84,11 +84,11 @@ header{
   min-height: 120px;
 }
 
-html {
+/*html {
   font-family: 'Lato', sans-serif;
   color: #edf1f2;
   background: transparent;
-}
+}*/
 
 header, footer, main, section, article, aside {
   padding: 2rem;
@@ -864,3 +864,40 @@ header{border-bottom: none;}}
 
 
 #fermer_partenaire{position:fixed; bottom: 10px; right: 10px;}
+
+
+
+
+
+
+
+.h1page {
+   font-size: 30px; background-color: white; text-align: center; padding: 10px 0px 10px 0px;
+}
+.h1page span
+{
+ color:#2B888C; font-size: 40px
+}
+
+.h2page
+{
+   display: inline-block;
+   
+   margin-bottom: 30px;
+   line-height: 80px;
+}
+
+#padding50{margin-bottom: 50px;}
+
+#colorhistoire{
+   background-color: #028bff;
+}
+
+#colorcontact{
+    background-color:  #ff0101;
+}
+
+#colorpalmarès{
+   background-color: #27a238;
+
+}
