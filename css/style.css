@@ -95,7 +95,7 @@ header, footer, main, section, article, aside {
 }
 
 header, footer {
-    background-image: url(../img/face3.png);
+  background-image: url(../img/face3.png);
   border-top: 5px solid #27888F;
   border-bottom: 5px solid #27888F;
 }
@@ -465,7 +465,12 @@ footer{
 }
 
 #menu-demo2{
-  background-color: #27888f;
+  background-color: #27888F;
+}
+
+.couleurnav{
+   background-color: #00ccff !important;
+
 }
 #menu-demo2, #menu-demo2 ul{
 padding:0;
@@ -876,7 +881,7 @@ header{border-bottom: none;}}
 }
 .h1page span
 {
- color:#2B888C; font-size: 40px
+ color:#00ccff; font-size: 40px
 }
 
 .h2page
@@ -897,7 +902,30 @@ header{border-bottom: none;}}
     background-color:  #ff0101;
 }
 
+#padding{
+   margin-bottom: 10px;
+}
+
 #colorpalmarès{
    background-color: #27a238;
 
 }
+
+#deroulantbleu{
+   background-color: #00ccff;
+}
+
+
+.bluebandeauseparateur{
+  border-top: 5px solid #00ccff;
+  border-bottom: 5px solid #00ccff;
+}
+
+
+
+
+#green
+{
+ color:#27888F;
+}
+
