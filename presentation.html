@@ -6,23 +6,22 @@
   <link rel="shortcut icon" href="img/favicon_FACE1.png">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-
-  
-      <link rel="stylesheet" href="css/style.css">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 
   
 </head>
 
 <body>
-  <header>
+  <header class="bluebandeauseparateur">
  <a href='#' id='nav_show' title='Show The Navigation'>Menu</a>
    <div id="logo"><img src="img/logo-face.png" width="160"/></div>
 </header>
   
    <div id="navbar">                   <!--  ////////////////    NAVBAR POUR PC !!!! //////////////////////// -->
- <ul id="menu-demo2">
+ <ul id="menu-demo2" class="couleurnav">
   <li id="first"><a href="index.html">Accueil</a>
-    <ul id="deroulant">
+    <ul id="deroulantbleu">
       <li><a href="index.html">Fil d'actualité</a></li>
       <li><a href="index.html">Reseaux sociaux</a></li>
       <li><a href="index.html">Press</a></li>
@@ -30,20 +29,20 @@
     </ul>
   </li>
   <li><a href="presentation.html">Présentation</a>
-    <ul id="deroulant">
+    <ul id="deroulantbleu">
       <li><a href="#">Histoire</a></li>
       <li><a href="#">Contact</a></li>
       <li><a href="#">Palmarès</a></li>
     </ul>
   </li>
   <li><a href="galerie.html">Galerie</a>
-    <ul id="deroulant">
+    <ul id="deroulantbleu">
       <li><a href="galerie.html">Photo</a></li>
       <li><a href="#">Médias</a></li>
     </ul>
   </li>
   <li><a href="partenariat.html">Partenariat</a>
-    <ul id="deroulant">
+    <ul id="deroulantbleu">
       <li><a href="#">Les entreprises</a></li>
       <li><a href="#">Les associations</a></li>
       <li><a href="#">Les particuliers</a></li>
@@ -51,7 +50,7 @@
     </ul>
   </li>
   <li><a href="la-fabrik.html">La Fabrik</a>
-    <ul id="deroulant">
+    <ul id="deroulantbleu">
       <li><a href="#">Présentation</a></li>
       <li><a href="#">Actualité</a></li>
       <li><a href="#">Reseaux sociaux</a></li>
@@ -132,32 +131,39 @@
     </li>
   </ul>
 </nav>
-<main>
 
-  <div class='wrap_columns clearfix'>
-    <section id='main-content'>
-      <article class='clearfix'>
-        <div class='content'>
-          <h2>FACE is good.</h2>
-          <p>Donec sed odio dui. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
+
+<main>
+        <div class='container'>
+                <div class="row">
+<!-- <div class="col-xs-0 col-sm-0 col-md-1 col-lg-1"></div> -->
+                        <div class="col-md-10 col col-md-offset-1" id="padding50">
+                                <h1 class="h1page" id="padding"><span>P</span>résentation</h1>
+                                <p>     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<!--       <div class="col-xs-0 col-sm-0 col-md-1 col-lg-1"></div> -->
+                        </div> 
+                </div>
+                <div class="row">
+                        <a href="index.html"> <h2 class="h2page col-xs-8 col col-xs-offset-2 col-sm-6 col col-sm-offset-3 col-md-6 col col-md-offset-3 col-lg-6 col col-lg-offset-3 text-center" id="colorhistoire">Histoire</h2></a>
+                </div> 
+                <div class="row">
+                        <a href="index.html"> <h2 class="h2page col-xs-8 col col-xs-offset-2 col-sm-6 col col-sm-offset-3 col-md-6 col col-md-offset-3 col-lg-6 col col-lg-offset-3 text-center" id="colorcontact">Contact</h2></a> 
+                </div>
+                <div class="row">
+                        <a href="index.html" class=""> <h2 class="h2page col-xs-8 col col-xs-offset-2 col-sm-6 col col-sm-offset-3 col-md-6 col col-md-offset-3 col-lg-6 col col-lg-offset-3 text-center" id="colorpalmarès">Palmarès</h2></a> 
+                </div>
+                
         </div>
-        <aside>
-          <p>The red line is tangential to the curve at the point marked by a red dot.</p>
-        </aside>
-      </article>
-    </section>
-    <section id='sidebar'>
-     <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffaceterritoirebourbonnais%2F&tabs=timeline&width=280&height=500&small_header=false&adapt_container_width=true&hide_cover=true&show_facepile=true&appId" width="100%" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
-    </section>
-  </div>
-  <section id='promotions'>
-    <article class='clearfix'>
-      <p>Aenean lacinia bibendum nulla sed consectetur. Donec id elit non mi porta gravida at eget metus. Etiam porta sem malesuada magna mollis euismod. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Cras mattis consectetur purus sit amet fermentum.</p>
-      <p>Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo. Nulla vitae elit libero, a pharetra augue. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
-    </article>
-  </section>
+
 </main>
-<footer>
+ 
+
+<footer class="bluebandeauseparateur">
 <ul id="ulFooter">
      <ul> 
           <li class="firstLi"><a href="index.html">Accueil</a></li>

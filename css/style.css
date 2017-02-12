@@ -84,18 +84,18 @@ header{
   min-height: 120px;
 }
 
-html {
+/*html {
   font-family: 'Lato', sans-serif;
   color: #edf1f2;
   background: transparent;
-}
+}*/
 
 header, footer, main, section, article, aside {
   padding: 2rem;
 }
 
 header, footer {
-    background-image: url(../img/face3.png);
+  background-image: url(../img/face3.png);
   border-top: 5px solid #27888F;
   border-bottom: 5px solid #27888F;
 }
@@ -465,7 +465,12 @@ footer{
 }
 
 #menu-demo2{
-  background-color: #27888f;
+  background-color: #27888F;
+}
+
+.couleurnav{
+   background-color: #00ccff !important;
+
 }
 #menu-demo2, #menu-demo2 ul{
 padding:0;
@@ -864,3 +869,63 @@ header{border-bottom: none;}}
 
 
 #fermer_partenaire{position:fixed; bottom: 10px; right: 10px;}
+
+
+
+
+
+
+
+.h1page {
+   font-size: 30px; background-color: white; text-align: center; padding: 10px 0px 10px 0px;
+}
+.h1page span
+{
+ color:#00ccff; font-size: 40px
+}
+
+.h2page
+{
+   display: inline-block;
+   
+   margin-bottom: 30px;
+   line-height: 80px;
+}
+
+#padding50{margin-bottom: 50px;}
+
+#colorhistoire{
+   background-color: #028bff;
+}
+
+#colorcontact{
+    background-color:  #ff0101;
+}
+
+#padding{
+   margin-bottom: 10px;
+}
+
+#colorpalmarès{
+   background-color: #27a238;
+
+}
+
+#deroulantbleu{
+   background-color: #00ccff;
+}
+
+
+.bluebandeauseparateur{
+  border-top: 5px solid #00ccff;
+  border-bottom: 5px solid #00ccff;
+}
+
+
+
+
+#green
+{
+ color:#27888F;
+}
+
