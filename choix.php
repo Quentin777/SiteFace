@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html >
 <head>
-	 <meta charset="UTF-8">
+  <meta charset="UTF-8">
   <title>FACE Bourbonnais</title>
   <link rel="shortcut icon" href="img/favicon_FACE1.png">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -9,54 +9,32 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
   <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
 
   
       <link rel="stylesheet" href="css/style.css">
+
+  
 </head>
 
-<body>
+<body style="background:#2B888C">
 
-<header>
-   <a href='#' id='nav_show' title='Show The Navigation'>Menu</a>
-   <div id="logo"><img src="img/logo-face.png" width="160"/></div>
-</header>
-
-<?php 
-include ('nav_pc.html'); 
-include ('nav_mobile.html');
-?>
-
-
-
-<div class="container">             <!--    ZONE PRINCIPAL DU SITE entre nav & footer -->
+ <div class="container">             <!--    ZONE PRINCIPAL DU SITE entre nav & footer -->
     <div class="row">
-    		<img src="img/admin.png" class="col-xs-12 col-sm-12 col-md-8 col-lg-8" height="50" id="img-admin">
-			<form class="col-xs-12 col-sm-12 col-md-12 col-lg-12" action="admin.php" method="post" enctype="multipart/form-data" id="form">
-				<div class="container">           
-    				<div class="row">
-
-<!--                                                -->
-
-<form action="admin.php" method="post">
-	<input type="text" name="add_article" value="jaquie" style="display: none">	
-	<input id="button-submit" type="submit" name="envoi_jaquie" value="Nouvel article">
-</form>
-<form action="admin.php" method="post">
-	<input type="text" name="add_partenaire" value="michel" style="display: none">
-	<input id="button-submit" type="submit" name="envoi_michel" value="Push partenaire">
-</form>
-
-
-<!--              -->
-
-
+      <div class="col-xs-0 col-sm-0 col-md-4 col-lg-4"></div>
+      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4" id="div-choix">
+        <form action="admin.php" method="post">
+          <input type="text" name="add_article" value="jaquie" style="display: none"> 
+          <input id="button-submit2" type="submit" name="envoi_jaquie" value="Nouvel article">
+        </form>
+          <form action="admin.php" method="post">
+          <input type="text" name="add_partenaire" value="michel" style="display: none">
+          <input id="button-submit2" type="submit" name="envoi_michel" value="Ajouter partenaire">
+        </form>
+    </div>
+  </div>
 </div>
-				</div>
-			</form>
-	</div>
-</div>	
 
 
-<?php include ('footer.html'); ?>
 </body>
 </html>
