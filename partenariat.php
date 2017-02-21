@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <title>FACE Bourbonnais</title>
-  <link rel="shortcut icon" href="img/favicon_FACE1.png"> <!-- icone du site -->
-  <meta content="width=device-width, initial-scale=1.0" name="viewport"> <!-- viewport bootstrap -->
-  <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One|Oleo+Script" rel="stylesheet"> <!-- font google -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"> <!-- css bootstrap -->
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet"> <!-- css bootstrap  -->
-  <link href="css/bootstrap.min.css" rel="stylesheet"> <!-- css bootstrap x3 ? wtf ? qui a mis tout ça -->
-  <link rel="stylesheet" href="css/style.css"> <!-- Css du site -->
+  <link rel="shortcut icon" href="img/favicon_FACE1.png">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  
+      <link rel="stylesheet" href="css/style.css">
 
   
 </head>
@@ -349,13 +349,9 @@ include ('nav_mobile.html');
 
 <?php include ('footer.html'); ?>
 
-  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>  <!-- navbar fixé au top -->
-  <script type="text/javascript" src="js/jquery.sticky.js"></script>
-  <script>
-    $(window).load(function(){
-      $("#navbar").sticky({ topSpacing: 0 });
-    });
-  </script>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+    <script src="js/index.js"></script>
 
 </body>
 </html>
