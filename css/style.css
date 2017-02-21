@@ -383,7 +383,7 @@ footer{
 /*//////////// zone article ///////////*/
 
 .photo_article{
-  max-width: 100%;
+  max-width: 100%; width: 100%;
 }
 
 .article{
