@@ -953,3 +953,10 @@ header{border-bottom: none;}}
 #div-choix{background-color:lightgrey; padding: 60px;margin-top: 20vh; /* poussé de la moitié de hauteur de viewport */}
 #button-submit2{width: 100%; background-color:#2B888C; color: white; border:none; font-size: 25px; margin-top: 20px; margin-bottom: 20px;}
 /*//////////////////////////////////////// ZONE LOGIN ADMINISTRATEUR ///////////////////////////////////////////////////*/
+
+/*//////////////////////////////////////// Page des articles ///////////////////////////////////////////////////*/
+#titre_pageArticle{background-color: white; text-align: center; font-size: 30px; margin-bottom: 40px;font-family: 'Orbitron', sans-serif; padding-top: 15px; padding-bottom: 10px;}
+#image_pageArticle{width:100%;height: 100%; margin-bottom: 40px;font-family: 'Orbitron', sans-serif;}
+
+
+/*//////////////////////////////////////// Page des articles ///////////////////////////////////////////////////*/
