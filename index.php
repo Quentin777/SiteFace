@@ -36,26 +36,22 @@ include ('nav_mobile.html');
           
           <div class="row">
            
-             
-             <div class="article col-xs-12 col-sm-6 col-md-6 col-lg-6">     <!-- Article 1 -->
-              <img src="img/article1.jpeg" class="photo_article" />
-              <h3 class="text_article"> <a href="index.html" class="liens_article">Le club d’entrepreneurs Face territoire bourbonnais a présenté son programme d’actions 2017 </a></h3>
-            </div>
-           
-             <div class="article col-xs-12 col-sm-6 col-md-6 col-lg-6">     <!-- Article 3 -->
-              <img src="img/article1.jpeg" class="photo_article" />
-              <h3 class="text_article"> <a href="index.html" class="liens_article">Le club d’entrepreneurs Face territoire bourbonnais a présenté son programme d’actions 2017 </a></h3>
-            </div>
+             <?php 
+     $tout = file('articles.txt');
+      $tableau = [];
+      foreach ($tout as $key => $value) {
+        $ligne = explode(',', $value);
+        array_push($tableau, $ligne);
+      }
+      foreach ($tableau as $key => $valeur) {
+            $key = $key +1;
+            echo '<div class="article col-xs-12 col-sm-6 col-md-6 col-lg-6">';    //<!-- Article 1 -->
+              echo '<img src="upload/' . $key . $valeur[2] . '" class="photo_article" />';
+             echo '<h3 class="text_article"> <a href="index.html" class="liens_article">' . $valeur[0] . '</a></h3></div>'; 
+      }
 
-             <div class="article col-xs-12 col-sm-6 col-md-6 col-lg-6">     <!-- Article 2 -->
-              <img src="img/article2.jpeg" class="photo_article" />
-              <h3 class="text_article"> <a href="index.html" class="liens_article">Le club d’entrepreneurs FACE veut développer l'emploi dans le numérique</a> </h3>
-            </div>
+    ?>
 
-            <div class="article col-xs-12 col-sm-6 col-md-6 col-lg-6">     <!-- Article 1 -->
-              <img src="img/article1.jpeg" class="photo_article" />
-              <h3 class="text_article"> <a href="index.html" class="liens_article">Le club d’entrepreneurs Face territoire bourbonnais a présenté son programme d’actions 2017 </a></h3>
-            </div>
           <!--     ////////// PAGINATION BAS ARTICLE //////// -->
               <ul class="pagination" style="margin-left: 37%;">
                 <li>

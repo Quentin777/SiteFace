@@ -1,0 +1,6 @@
+nav fixed
+pouvoir supprimer un partenaire
+choisir le logo du partenaire
++devis
+securisation
+recupérer contenu (facebook, la montagne, site face)
