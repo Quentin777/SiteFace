@@ -218,7 +218,6 @@ main {
   padding-top: 6rem;
   padding-bottom: 6rem;
   background: #dce3e5;
-  z-index: 1;
 }
 
 section {
@@ -462,12 +461,11 @@ footer{
   /*/////////////////////////////  CSS  NAVBAR /////////////////////////////////////*/
 
 #navbar{
-z-index: 2;
+
 }
 
 #menu-demo2{
   background-color: #27888F;
-  z-index: 3;
 }
 
 .couleurnav{
