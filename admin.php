@@ -5,15 +5,33 @@ if(isset($_POST['titre'],$_POST['message'])){
 }
 if(isset($_POST['pseudo'],$_POST['password'])){
 	if($_POST['pseudo'] == 'eric' AND $_POST['password'] == 'password'){
-	$robert = 1;
+	$robert = 2;
 }
 }
+
 ?>
 <?php
-if($robert !=1){
+
+if(isset($_POST['add_article'])){
+	$robert = 1;
+}else if(isset($_POST['add_partenaire'])){
+	$robert = 4;
+}
+
+if($robert == 3){
 include ('formulaire_admin.php');
 }
+
+
+else if($robert == 2){
+	include ('choix.php');
+}
+
 ?>
+
+
+
+
 <?php 
 	if($robert == 1){
 		if(isset($_POST['titre'],$_POST['message'])){
@@ -40,5 +58,7 @@ include ('formulaire_admin.php');
      
 	}
 	include('push_article.php');
+	}else if($robert == 4){
+		include('push_partenaire.php');
 	}
 ?>
