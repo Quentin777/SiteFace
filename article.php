@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
   <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
 
   
       <link rel="stylesheet" href="css/style.css">
@@ -29,22 +30,25 @@ include ('nav_mobile.html');
 
 <main>
 
+<div class="container">
+  <div class="row">
 <?php 
   if(isset($_GET['numero'])){
     $articles = file('articles.txt');
     foreach ($articles as $key => $value) {
       $unParUn = explode(',', $value);
       if($unParUn[3] == $_GET['numero']){
-        echo "<h1>" . $unParUn[0] . "</h1>";
-        echo '<img src="upload/'.$unParUn[3] . $unParUn[2].'"/>';
-        echo "<p>" . $unParUn[1] . "</p>";
+        echo '<h1 id="titre_pageArticle" class="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-md-offset-2 col-lg-offset-2">' . $unParUn[0] . '</h1>';
+        echo '<img src="upload/'.$unParUn[3] . $unParUn[2].'" id="image_pageArticle" class="col-xs-12 col-sm-12 col-md-10 col-lg-10 col-md-offset-1 col-lg-offset-1"/>';
+        echo '<p id="paragraphe_pageArticle">' . $unParUn[1] . '</p>';
 
 
       }
     }
   }
 ?>
-
+  </div>
+</div>
 
 
 </main>
