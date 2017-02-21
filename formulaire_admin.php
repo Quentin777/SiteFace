@@ -26,7 +26,7 @@
 			<form action="admin.php" method="post">
 				<h1 id="eric"> Bonjour Eric</h1>
 				<input id="login-admin" type="text" name="pseudo" placeholder="Nom d'utilisateur"><br>
-				<input id="mdp-admin" type="text" name="password" placeholder="Mot de passe"><br>
+				<input id="mdp-admin" type="password" name="password" placeholder="Mot de passe"><br>
 				<input id="submit-admin" type="submit" name="push">
 			</form>
 		</div>
