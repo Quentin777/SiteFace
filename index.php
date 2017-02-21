@@ -45,7 +45,7 @@ include ('nav_mobile.html');
       }
       foreach ($tableau as $key => $valeur) {
             $key = $key +1;
-            echo '<a href="' . strtolower($valeur[0]) . '.php"><div class="article col-xs-12 col-sm-6 col-md-6 col-lg-6">';    //<!-- Article 1 -->
+            echo '<a href="article.php?numero='.$key.'"><div class="article col-xs-12 col-sm-6 col-md-6 col-lg-6">';    //<!-- Article 1 -->
               echo '<img src="upload/' . $key . $valeur[2] . '" class="photo_article" />';
              echo '<h3 class="text_article"> <a href="index.html" class="liens_article">' . $valeur[0] . '</a></h3></div></a>'; 
       }

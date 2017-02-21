@@ -40,7 +40,7 @@ else if($robert == 2){
 		(int) $chiffre = (int) fgets($compteur);
 		$chiffre = $chiffre +1;
 		$nom = $_FILES['image']['name'];
-		fputs($articles, $_POST['titre'] . "," . $_POST['message'] . "," . $nom . ",\n");
+		fputs($articles, $_POST['titre'] . "," . $_POST['message'] . "," . $nom . "," . $chiffre . ",\n");
 		fseek($compteur, 0);
 		fputs($compteur, $chiffre);
 		fclose($compteur);
