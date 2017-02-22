@@ -43,6 +43,28 @@ include ('nav_mobile.html');
           <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="text_association">
           <div class="container">
           <div class="row">
+
+              <?php 
+     $tout = file('partenaires.txt');
+      $tableau = [];
+      foreach ($tout as $key => $value) {
+        $ligne = explode('%ICILALIMITE%', $value);
+        array_push($tableau, $ligne);
+      }
+      foreach ($tableau as $key => $valeur) {  
+              $key = $key+1;        
+              echo '<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="partenaire_div" style="margin-top: 20px;">';
+              echo '<a href="'.$valeur[3].'">'; 
+              echo '<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3"> <img src="uploadPartenaire/'.$key.$valeur[2].'" width="120"></div>';
+              echo '<div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">'; 
+              echo '<h1>'.$valeur[0].'</h1>';
+              echo '<p>'.$valeur[1].'</p></div></div></a>';
+      }
+
+    ?>
+
+          <!--            Debut vrais partenaires                 -->
+
               <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="partenaire_div" style="margin-top: 20px;">                     <!-- // ADMICAL // -->
               <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3"> <img src="img/partenaire/admical.jpg" width="150"></div>
               <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">

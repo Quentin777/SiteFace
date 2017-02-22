@@ -36,11 +36,13 @@ include ('nav_mobile.html');
     				<div class="row">
 					    <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2" id="div-formulaire"><input id="titre-article" type="text" name="titre" placeholder="Nom du partenaire"></div>
 					    <div class="col-xs-0 col-sm-0 col-md-10 col-lg-10"></div>
+					    <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2" id="div-formulaire"><input id="titre-article" type="text" name="url" placeholder="Site du partenaire"></div>
+					    <div class="col-xs-0 col-sm-0 col-md-10 col-lg-10"></div>
 					    <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3" id="div-formulaire"><label id="text-img">Selectionnez le logo du partenaire </label><input id="submit-img" type="file" name="image"></div>
 					    <div class="col-xs-0 col-sm-0 col-md-9 col-lg-9"></div>
 					    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" id="div-formulaire"><textarea id="contenu-article" type="textfield" name="message" placeholder="Description du partenaire"></textarea></div>
 					    <div class="col-xs-0 col-sm-0 col-md-6 col-lg-6"></div>
-					    <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2" id="div-formulaire"><input id="button-submit" type="submit" name="envoi" value="ENVOYER"></div>
+					    <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2" id="div-formulaire"><input id="button-submit" type="submit" name="envoi_partenaire" value="ENVOYER"></div>
 					    
 					</div>
 				</div>

@@ -40,7 +40,7 @@ include ('nav_mobile.html');
      $tout = file('articles.txt');
       $tableau = [];
       foreach ($tout as $key => $value) {
-        $ligne = explode(',', $value);
+        $ligne = explode('%ICILALIMITE%', $value);
         array_push($tableau, $ligne);
       }
       foreach ($tableau as $key => $valeur) {
