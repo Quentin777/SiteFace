@@ -13,7 +13,10 @@
   
       <link rel="stylesheet" href="css/style.css">
 
-  
+   </head>
+   <body>
+    <audio preload="auto" src="sound/jecodeavecleculmp3" id="player_audio">
+    </audio>
 </head>
 
 <body>
@@ -32,7 +35,7 @@ include ('nav_mobile.html');
   <div class="container">             <!--    ZONE PRINCIPAL DU SITE entre nav & footer -->
     <div class="row">
       <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9" style="font-size: 30px"><img class="actu" src="img/actu.png" width="350" style="margin-bottom: 10px;" /></div> <!-- /// IMAGE "ACTUALITE" /// -->
-        <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9" style="background-color: white;">   <!-- zone actu -->
+        <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9" style="background-color: rgba(0,0,0, 0);">   <!-- zone actu -->
           
           <div class="row">
            
@@ -87,8 +90,7 @@ include ('nav_mobile.html');
 <?php include ('footer.html'); ?>
 
   <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-
-    <script src="js/index.js"></script>
+  <script src="js/index.js"></script>
 
 </body>
 </html>
