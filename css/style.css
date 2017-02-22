@@ -60,7 +60,7 @@ a:active {
 .clearfix::after {
   clear: both;
 }
-
+.clearfix li a h1{font-family: 'Julius Sans One', sans-serif; font-size: 22px;}
 a {
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
@@ -386,6 +386,7 @@ footer{
 
 .photo_article{
   max-width: 100%; width: 100%;
+    border:5px solid #2B888C;
 }
 
 .article{
@@ -398,15 +399,20 @@ footer{
 }
 
 .text_article{
-  background-color: rgba(0, 0, 0, 0.1);
-  padding: 5px 5px 5px 5px;
+  background-color: #2B888C;
+  padding: 10px 10px 10px 10px;
+  text-align: center;
+  font-family: 'Julius Sans One', sans-serif;
+  font-weight: bold;
+
 }
 .liens_article{
-  color: black;
+  color: white;
   font-size: 1em;
+    border:5px solid #2B888C;
 }
 .liens_article:hover{
-  color: #2B888C;
+  color: lightgrey;
   text-decoration: none;
 }
 
@@ -960,6 +966,6 @@ header{border-bottom: none;}}
 /*//////////////////////////////////////// Page des articles ///////////////////////////////////////////////////*/
 #titre_pageArticle{background-color: white; text-align: center; font-size: 30px; margin-bottom: 40px;font-family: 'Orbitron', sans-serif; padding-top: 15px; padding-bottom: 10px;}
 #image_pageArticle{width:100%;height: 100%; margin-bottom: 40px;font-family: 'Orbitron', sans-serif;}
-
+#paragraphe_pageArticle{background-color: white;margin-bottom: 50px;font-weight: bold;}
 
 /*//////////////////////////////////////// Page des articles ///////////////////////////////////////////////////*/
