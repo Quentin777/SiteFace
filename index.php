@@ -5,7 +5,6 @@
   <title>FACE Bourbonnais</title>
   <link rel="shortcut icon" href="img/favicon_FACE1.png">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One|Oleo+Script" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
   <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -34,8 +33,8 @@ include ('nav_mobile.html');
  
   <div class="container">             <!--    ZONE PRINCIPAL DU SITE entre nav & footer -->
     <div class="row">
-      <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9" style="font-size: 30px"><img class="actu" src="img/actu.png" width="350" style="margin-bottom: 10px;" /></div> <!-- /// IMAGE "ACTUALITE" /// -->
-        <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9" style="background-color: rgba(0,0,0, 0);">   <!-- zone actu -->
+      <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9" style="font-size: 30px;"><img class="actu" src="img/actu.png" width="350" style="margin-bottom: 10px;" /></div> <!-- /// IMAGE "ACTUALITE" /// -->
+        <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9" ">   <!-- zone actu -->
           
           <div class="row">
            
@@ -50,13 +49,13 @@ include ('nav_mobile.html');
             $key = $key +1;
             echo '<a href="article.php?numero='.$key.'"><div class="article col-xs-12 col-sm-6 col-md-6 col-lg-6">';    //<!-- Article 1 -->
               echo '<img src="upload/' . $key . $valeur[2] . '" class="photo_article" />';
-             echo '<h3 class="text_article"> <a href="index.html" class="liens_article">' . $valeur[0] . '</a></h3></div></a>'; 
+             echo '<h3 class="text_article"> <a href="article.php?numero='.$key.'" class="liens_article">' . $valeur[0] . '</a></h3></div></a>'; 
       }
 
     ?>
 
           <!--     ////////// PAGINATION BAS ARTICLE //////// -->
-              <ul class="pagination" style="margin-left: 37%;">
+       <!--        <ul class="pagination" style="margin-left: 37%;">
                 <li>
                   <a href="#" aria-label="Previous">
                     <span aria-hidden="true">&laquo;</span>
@@ -72,7 +71,7 @@ include ('nav_mobile.html');
                     <span aria-hidden="true">&raquo;</span>
                   </a>
                 </li>
-              </ul>
+              </ul> -->
               <!--     ////////// PAGINATION BAS ARTICLE FIN //////// -->
           </div>
         </div>  
