@@ -217,7 +217,9 @@ body.nav_toggled header, body.nav_toggled footer, body.nav_toggled main {
 main {
   padding-top: 6rem;
   padding-bottom: 6rem;
-  background: #dce3e5;
+  background: /*#dce3e5*/url('../img/fondtest-01.png');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 section {
@@ -465,7 +467,8 @@ footer{
 }
 
 #menu-demo2{
-  background-color: #27888F;
+  background: /*#27888F*/url('../img/navbar.png');
+  background-size: cover;
 }
 
 .couleurnav{
