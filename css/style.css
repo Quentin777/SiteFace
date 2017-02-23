@@ -82,6 +82,9 @@ header, footer, main {
 
 header{
   min-height: 120px;
+  background-image: url(../img/barre.png) !important;
+/*  background-size: 100% 100% !important;*/
+  background-position: right;
 }
 
 /*html {
@@ -182,6 +185,7 @@ nav ul li a:active {
   text-transform: uppercase;
   background: #27888F;
   animation: fadeInLeft 1s;
+  box-shadow: 3px 3px 10px black;
 }
 
 #nav_show:hover {
@@ -330,10 +334,12 @@ div.wrap_columns {
   margin-top: 0px;
   float: right;
   animation: fadeInRight 1s;
+  background-color: rgba(255,255,255, 1);
 }
 /*//////////////////  FOOTER //////////////*/
 footer{
   padding-left: 0px;
+  background:#2B888C !important;
 }
 #ulFooter{
   display: flex;
@@ -355,11 +361,13 @@ footer{
 }
 
 #ulFooter ul li a{
-    color:grey;
+    color:white;
     text-decoration: none;
 }
 #ulFooter ul .firstLi a{
-    color:#606060;
+    color:white;
+    font-size: 20px;
+    font-family: 'Julius Sans One', sans-serif;
 }
 .firstLi{
   font-size: 20px;
@@ -954,13 +962,13 @@ header{border-bottom: none;}}
 
 /*//////////////////////////////////////// ZONE LOGIN ADMINISTRATEUR ///////////////////////////////////////////////////*/
 #div-login{background-color:lightgrey; padding: 60px;margin-top: 20vh; /* poussé de la moitié de hauteur de viewport */}
-#login-admin{width: 100%; margin-bottom: 20px;background:#2B888C;border: none; font-size: 20px; font-weight: bold;text-align: center;}
-#mdp-admin{width: 100%;margin-bottom: 40px;background:#2B888C;border: none; font-size: 20px; font-weight: bold;text-align: center;}
+#login-admin{width: 100%; margin-bottom: 20px;background:#2B888C;border: none; font-size: 20px; font-weight: bold;text-align: center;box-shadow: 5px 5px 20px grey;}
+#mdp-admin{width: 100%;margin-bottom: 40px;background:#2B888C;border: none; font-size: 20px; font-weight: bold;text-align: center;box-shadow: 5px 5px 20px grey;}
 #submit-admin{display: block;margin : auto;background: lightgrey;border: none; font-size: 20px;font-weight: bold;color:#2B888C;border: 2px solid #2B888C;}
 #eric{text-align: center;margin-top: -10px; margin-bottom: 30px;font-family: 'Orbitron', sans-serif;font-weight: bold;}
 
 #div-choix{background-color:lightgrey; padding: 60px;margin-top: 20vh; /* poussé de la moitié de hauteur de viewport */}
-#button-submit2{width: 100%; background-color:#2B888C; color: white; border:none; font-size: 25px; margin-top: 20px; margin-bottom: 20px;}
+#button-submit2{width: 100%; background-color:#2B888C; color: white; border:none; font-size: 25px; margin-top: 20px; margin-bottom: 20px;box-shadow: 5px 5px 20px grey;}
 /*//////////////////////////////////////// ZONE LOGIN ADMINISTRATEUR ///////////////////////////////////////////////////*/
 
 /*//////////////////////////////////////// Page des articles ///////////////////////////////////////////////////*/
