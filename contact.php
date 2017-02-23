@@ -35,7 +35,7 @@
 							03000 Moulins – FRANCE</p><br>
 							<p>
 							<strong>Tél. :</strong> 06 89 32 71 09<br>
-							<strong>Fax :</strong> ** ** ** ** ** <br>
+							<strong>Tél. :</strong> 01 49 22 68 68<br>
 							<strong>Mail :</strong> ******@****.fr<br>
 							</p>
 					</div>
