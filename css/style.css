@@ -979,3 +979,85 @@ header{border-bottom: none;}}
 #paragraphe_pageArticle{background-color: white;margin-bottom: 50px;font-weight: bold;}
 
 /*//////////////////////////////////////// Page des articles ///////////////////////////////////////////////////*/
+
+/*////////////////////////////////////////////PAGE HISTOIRE//////////////////////////////////////////////////////////*/
+#histoire-form {
+  margin-top: 40px;
+}
+#histoire-form p{
+  margin-top: 20px;
+}
+.titre-h1{
+  font-size: 3em;
+}
+#valeur-histoire{
+  background-color: #f0f0f0;
+  box-shadow: 2px 2px 4px black;
+  padding: 15px; 
+  margin: 20px 0;
+}
+#presentation-container{
+ background-color: white; 
+ box-shadow: 2px 2px 4px black;
+}
+.histoire-italique{
+  font-size: 0.8em;
+}
+#presentation-span{
+  font-size: 1.2em;
+  color:#2B888C;
+}
+#histoire-form ul{
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+/*//////////////////LETTRINE/////////////////*/
+#histoire-form #lettrine-p::first-letter {
+  font-family:'Lobster', cursive;
+  font-size:3.5em;
+  padding-right:0.2em;
+  float:left;
+  color:#2B888C;
+  margin-top: -10px;
+  margin-bottom: -10px;
+  text-shadow: 1px 1px 2px grey;
+}
+/*---------------Fin lettrine-------------*/
+#presentation-photo{
+  float: right; 
+  margin-left: 15px; 
+  box-shadow: 2px 2px 4px black;
+  margin-bottom: 5px;
+}
+.date-histoire{
+  background-color: #2B888C;
+  color: #ffffff;
+}
+.date-histoire:hover{
+  background-color: #486d70;
+}
+/*--------------------------------------------fin PAGE HISTOIRE-----------------------------------------------------*/
+/*////////////////////////////////////////////PAGE ACTIONS//////////////////////////////////////////////////////////*/
+#action-page h3{
+  margin-top: 40px;
+  margin-bottom: 5px;
+  background-color: #f0f0f0;
+  padding: 10px;
+}
+#action-page iframe{
+  box-shadow: 4px 4px 8px black;
+  margin-top: 10px;
+}
+#action-page #lettrine-p::first-letter {
+  font-size:3.5em;
+  padding-right:0.2em;
+  float:left;
+  color:#2B888C;
+  margin-top: -15px;
+  margin-bottom: -20px;
+  text-shadow: 1px 1px 2px grey;
+}
+.video-action{
+  box-shadow: 2px 2px 4px black;
+}
+/*------------------------------------------fin PAGE ACTIONS-----------------------------------------------------*/
