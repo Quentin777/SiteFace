@@ -42,7 +42,7 @@
 							<iframe class="center-block" src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Ffaceterritoirebourbonnais%2Fvideos%2F199079147153479%2F&show_text=0&width=560" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
 
 							<h3><strong>Création du projet Civigaz</strong></h3> 
-							<p  id='lettrine-p'><span id="lettrine">E</span>n 2017, dans le cadre d'un budget porté à 215.000 , Face Territoire bourbonnais va relayer le dispositif Civigaz, porté par la Fondation nationale. GrDF, l'agence du service civique, Face et le ministère de l'Ecologie s'associent contre la précarité énergétique. « Nous allons employer des jeunes en service civique pour se rendre au domicile de personnes en difficultés, à Moulins et sur tout notre bassin, pour les informer sur les économies d'énergie et la sécurisation du chauffage au gaz », résume Erice Getenay, qui annonce aussi « des réunions d'information ».</p>
+							<p  id='lettrine-p'><span id="lettrine">E</span>n 2017, dans le cadre d'un budget porté à 215.000 €, Face Territoire bourbonnais va relayer le dispositif Civigaz, porté par la Fondation nationale. GrDF, l'agence du service civique, Face et le ministère de l'Ecologie s'associent contre la précarité énergétique. « Nous allons employer des jeunes en service civique pour se rendre au domicile de personnes en difficultés, à Moulins et sur tout notre bassin, pour les informer sur les économies d'énergie et la sécurisation du chauffage au gaz », résume Eric Getenay, qui annonce aussi « des réunions d'information ».</p>
 
 
 							

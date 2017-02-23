@@ -34,8 +34,8 @@
 							<p>1 Rue Berthelot,<br>
 							03000 Moulins – FRANCE</p><br>
 							<p>
-							<strong>Tél. :</strong> 08 36 65 65 65<br>
-							<strong>Fax :</strong> 08 36 65 65 65<br>
+							<strong>Tél. :</strong> 06 89 32 71 09<br>
+							<strong>Fax :</strong> ** ** ** ** ** <br>
 							<strong>Mail :</strong> ******@****.fr<br>
 							</p>
 					</div>
