@@ -34,6 +34,12 @@ include ('nav_mobile.html');
 			<form class="col-xs-12 col-sm-12 col-md-12 col-lg-12" action="admin.php" method="post" enctype="multipart/form-data" id="form">
 				<div class="container">           
     				<div class="row">
+
+ 						<div class="col-xs-12 col-sm-12 col-md-1 col-lg-1" id="div-formulaire"><label>Entreprise</label><input id="titre-article" type="radio" name="choix_partenaire" value="Entreprise"></div>
+ 						<div class="col-xs-12 col-sm-12 col-md-1 col-lg-1" id="div-formulaire"><label>Association</label><input id="titre-article" type="radio" name="choix_partenaire" value="Associatif"></div>
+ 						<div class="col-xs-12 col-sm-12 col-md-1 col-lg-1" id="div-formulaire"><label>Institution</label><input id="titre-article" type="radio" name="choix_partenaire" value="Institutionnel"></div>
+					    <div class="col-xs-0 col-sm-0 col-md-9 col-lg-9"></div>
+
 					    <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2" id="div-formulaire"><input id="titre-article" type="text" name="titre" placeholder="Nom du partenaire"></div>
 					    <div class="col-xs-0 col-sm-0 col-md-10 col-lg-10"></div>
 					    <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2" id="div-formulaire"><input id="titre-article" type="text" name="url" placeholder="Site du partenaire"></div>

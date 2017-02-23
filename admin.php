@@ -73,7 +73,7 @@ else if($robert == 2){
 			$chiffre = $chiffre +1;
 			$nom = $_FILES['image']['name'];
 			$retourLigne = str_replace(CHR(13).CHR(10),"</br>",$_POST['message']);
-			fputs($articles, $_POST['titre'] . "%ICILALIMITE%" . $retourLigne . "%ICILALIMITE%" . $nom . "%ICILALIMITE%" . $_POST['url'] . "%ICILALIMITE%" . $chiffre . "%ICILALIMITE%\n");
+			fputs($articles, $_POST['titre'] . "%ICILALIMITE%" . $retourLigne . "%ICILALIMITE%" . $nom . "%ICILALIMITE%" . $_POST['url'] . "%ICILALIMITE%" . $chiffre . "%ICILALIMITE%".$_POST['choix_partenaire']."%ICILALIMITE%\n");
 			fseek($compteur, 0);
 			fputs($compteur, $chiffre);
 			fclose($compteur);
