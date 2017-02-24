@@ -32,8 +32,8 @@ include ('nav_mobile.html');
 
 <div class="container">
   <div class="row" style="background-color: rgba(255,255,255,0.9); border:2px solid #2B888C;box-shadow: 10px 10px 20px rgba(0,0,0,0.5);">
-<?php 
-  if(isset($_GET['numero'])){
+
+ <!--  if(isset($_GET['numero'])){
     $articles = file('articles.txt');
     foreach ($articles as $key => $value) {
       $unParUn = explode('%ICILALIMITE%', $value);
@@ -45,8 +45,23 @@ include ('nav_mobile.html');
 
       }
     }
-  }
-?>
+  } -->
+
+
+  <?php 
+    if(isset($_GET['numero'])){
+      $bdd = new PDO('mysql:host=localhost;dbname=face', 'root', '' );
+      $articles = $bdd->query('SELECT * FROM article');
+      foreach ($articles as $value) {
+        if($value[0] == $_GET['numero']){
+          echo '<h1 id="titre_pageArticle" class="col-xs-12 col-sm-12 col-md-10 col-lg-10 col-md-offset-1 col-lg-offset-1">' .$value[1] . '</h1>';
+          echo '<img src="upload/'.$value[0] . $value[2].'" id="image_pageArticle" class="col-xs-12 col-sm-12 col-md-10 col-lg-10 col-md-offset-1 col-lg-offset-1"/>';
+          echo '<p id="paragraphe_pageArticle" class="col-xs-12 col-sm-12 col-md-10 col-lg-10 col-md-offset-1 col-lg-offset-1">' . $value[3] . '</p>';
+        }
+      }
+    }
+  ?>
+
   </div>
 </div>
 
