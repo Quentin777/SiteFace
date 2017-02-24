@@ -38,8 +38,18 @@ include ('nav_mobile.html');
           
           <div class="row">
            
-             <?php 
-     $tout = file('articles.txt');
+            <?php 
+    
+      $bdd = new PDO('mysql:host=localhost;dbname=face', 'root', '' );
+      $articles = $bdd->query('SELECT * FROM article'); 
+      foreach ($articles as $value) {
+          echo '<a href="article.php?numero='.$value[0].'"><div class="article col-xs-12 col-sm-6 col-md-6 col-lg-6">'; 
+          echo '<img src="upload/' . $value[0] . $value[2] . '" class="photo_article" />';
+          echo '<h3 class="text_article"> <a href="article.php?numero='.$value[0].'" class="liens_article">' . $value[1] . '</a></h3></div>';
+      }
+     ?>
+             
+    <!--  $tout = file('articles.txt');
       $tableau = [];
       foreach ($tout as $key => $value) {
         $ligne = explode('%ICILALIMITE%', $value);
@@ -47,12 +57,14 @@ include ('nav_mobile.html');
       }
       foreach ($tableau as $key => $valeur) {
             $key = $key +1;
-            echo '<a href="article.php?numero='.$key.'"><div class="article col-xs-12 col-sm-6 col-md-6 col-lg-6">';    //<!-- Article 1 -->
+            echo '<a href="article.php?numero='.$key.'"><div class="article col-xs-12 col-sm-6 col-md-6 col-lg-6">';    //
               echo '<img src="upload/' . $key . $valeur[2] . '" class="photo_article" />';
              echo '<h3 class="text_article"> <a href="article.php?numero='.$key.'" class="liens_article">' . $valeur[0] . '</a></h3></div></a>'; 
-      }
+      } -->
 
-    ?>
+    
+
+
 
           <!--     ////////// PAGINATION BAS ARTICLE //////// -->
        <!--        <ul class="pagination" style="margin-left: 37%;">

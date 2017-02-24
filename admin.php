@@ -70,12 +70,16 @@ else if($robert == 2){
 		if(isset($_POST['titre'],$_POST['message']) AND $_POST['titre'] != "" AND $_POST['message'] != ""){
 			$bdd = new PDO('mysql:host=localhost;dbname=face', 'root', '' );
 			$article = $bdd->query('SELECT * FROM article');
+			$id = 1;
+			foreach ($article as $value) {
+				$id = $id +1;
+			}
 			$nom = $_FILES['image']['name'];
 			$retourLigne = str_replace(CHR(13).CHR(10),"</br>",$_POST['message']);
-			$ajout_article = $bdd->prepare('INSERT INTO article(titre,image,message) VALUES(:titre,image,:message) ');
+			$ajout_article = $bdd->prepare('INSERT INTO article(titre,image,message) VALUES(:titre,:image,:message) ');
 			$ajout_article->execute(array('titre' => $_POST['titre'],'image' => $nom, 'message' => $retourLigne));
-			$dossier = 'uploadPartenaire/';
-     	$fichier = $chiffre . $_FILES['image']['name'];
+			$dossier = 'upload/';
+     	$fichier = $id . $_FILES['image']['name'];
      	if(move_uploaded_file($_FILES['image']['tmp_name'], $dossier . $fichier)) //Si la fonction renvoie TRUE, c'est que ça a fonctionné...
      	{
       	    echo 'Upload effectué avec succès !';
@@ -85,6 +89,10 @@ else if($robert == 2){
           echo 'Echec de l\'upload !';
      	}
 		}
+		include('push_article.php');
+	 }else if($robert == 4){
+	 	include('push_partenaire.php');
+	
 	}
 
 	// if($robert == 5){
@@ -117,13 +125,16 @@ else if($robert == 2){
 		if(isset($_POST['titre'],$_POST['message'],$_POST['url']) AND $_POST['titre'] != "" AND $_POST['message'] != "" AND $_POST['url'] != ""){
 			$bdd = new PDO('mysql:host=localhost;dbname=face', 'root', '' );
 			$partenaire = $bdd->query('SELECT * FROM partenaire');
-			$chiffre = count($partenaire);
+			$id = 1;
+			foreach ($partenaire as $value) {
+				$id = $id +1;
+			}
 			$nom = $_FILES['image']['name'];
 			$retourLigne = str_replace(CHR(13).CHR(10),"</br>",$_POST['message']);
 			$ajout_partenaire = $bdd->prepare('INSERT INTO partenaire(choix_partenaire,titre,url,image,message) VALUES(:choix_partenaire,:titre,:url,:image,:message) ');
 			$ajout_partenaire->execute(array('choix_partenaire' => $_POST['choix_partenaire'], 'titre' => $_POST['titre'], 'url' => $_POST['url'],'image' => $nom, 'message' => $retourLigne));
 			$dossier = 'uploadPartenaire/';
-     	$fichier = $chiffre . $_FILES['image']['name'];
+     	$fichier = $id . $_FILES['image']['name'];
      	if(move_uploaded_file($_FILES['image']['tmp_name'], $dossier . $fichier)) //Si la fonction renvoie TRUE, c'est que ça a fonctionné...
      	{
       	    echo 'Upload effectué avec succès !';
