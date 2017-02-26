@@ -31,6 +31,10 @@
           <input type="text" name="add_partenaire" value="michel" style="display: none">
           <input id="button-submit2" type="submit" name="envoi_michel" value="Ajouter partenaire">
         </form>
+        <form action="admin.php" method="post">
+          <input type="text" name="add_action" value="merci" style="display: none">
+          <input id="button-submit2" type="submit" name="envoi_michel" value="Ajouter une action">
+        </form>
     </div>
   </div>
 </div>

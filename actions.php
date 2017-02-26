@@ -50,6 +50,30 @@
 							<p  id='lettrine-p'><span id="lettrine">U</span>n premier Café d'en face a permis d'engager le dialogue entre le public et des chefs d'entreprises. Un second s'est tenue à l'Inter-mitemps à Moulins, le 15 février. Son thème « Demain, ma vie, mon métier ».</p>
 
 							<iframe class="center-block" src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Ffaceterritoirebourbonnais%2Fvideos%2F286357901758936%2F&show_text=0&width=560" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe></p>
+
+
+						<?php 
+							$facebook_left = '<iframe class="center-block" src="https://www.facebook.com/plugins/video.php?href=';
+							$facebook_right = '&show_text=0&width=560" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>';
+							$youtube_left = '<iframe width="560" height="315" class="center-block" src="https://www.youtube.com/embed/';
+							$youtube_right = '" frameborder="0" allowfullscreen></iframe>';
+							$bdd = new PDO('mysql:host=localhost;dbname=face','root','');
+							$action = $bdd->query('SELECT * FROM action');
+							foreach ($action as $value) {
+								$site = explode('.', $value[3]);
+								if($site[1] == 'facebook'){
+									echo "<h3><strong>".$value[1]."</strong></h3>";
+									echo "<p id='lettrine-p'>".$value[2]."</p>";
+									echo $facebook_left.$value[3].$facebook_right;
+								}else if ($site[1] == 'youtube'){
+									$youtube_embed = explode('=', $site[2]);
+									echo "<h3><strong>".$value[1]."</strong></h3>";
+									echo "<p id='lettrine-p'>".$value[2]."</p>";
+									echo $youtube_left.$youtube_embed[1].$youtube_right;
+								}
+							}	
+						?>
+
 	                </div>
 	            </div> 
 	        </div>

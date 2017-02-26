@@ -45,7 +45,7 @@ include ('nav_mobile.html');
           <div class="row">
 
           <?php
-            $bdd = new PDO('mysql:host=localhost;dbname=face', 'root', '' );
+      $bdd = new PDO('mysql:host=localhost;dbname=face', 'root', '' );
             $articles = $bdd->query('SELECT * FROM partenaire');
             foreach ($articles as $key => $value) {
               if($value[1] == "Associatif"){
@@ -197,7 +197,7 @@ include ('nav_mobile.html');
 
             
             <?php
-            $bdd = new PDO('mysql:host=localhost;dbname=face', 'root', '' );
+      $bdd = new PDO('mysql:host=localhost;dbname=face', 'root', '' );
             $articles = $bdd->query('SELECT * FROM partenaire');
             foreach ($articles as $key => $value) {
               if($value[1] == "Entreprise"){
@@ -307,7 +307,7 @@ include ('nav_mobile.html');
 
           
             <?php
-            $bdd = new PDO('mysql:host=localhost;dbname=face', 'root', '' );
+      $bdd = new PDO('mysql:host=localhost;dbname=face', 'root', '' );
             $articles = $bdd->query('SELECT * FROM partenaire');
             foreach ($articles as $key => $value) {
               if($value[1] == "Institutionnel"){

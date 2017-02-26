@@ -18,6 +18,10 @@ if(isset($_POST['add_article'])){
 	$robert = 4;
 }else if(isset($_POST['envoi_partenaire'])){
 	$robert = 5;
+}else if (isset($_POST['add_action'])){
+	$robert = 6;
+}else if (isset($_POST['envoi_action'])){
+	$robert = 7;
 }
 
 if($robert == 3){
@@ -27,6 +31,10 @@ include ('formulaire_admin.php');
 
 else if($robert == 2){
 	include ('choix.php');
+}
+
+else if($robert == 6){
+	include ('ajout_action.php');
 }
 
 ?>
@@ -68,7 +76,7 @@ else if($robert == 2){
 
 		if($robert == 1){
 		if(isset($_POST['titre'],$_POST['message']) AND $_POST['titre'] != "" AND $_POST['message'] != ""){
-			$bdd = new PDO('mysql:host=localhost;dbname=face', 'root', '' );
+      $bdd = new PDO('mysql:host=localhost;dbname=face', 'root', '' );
 			$article = $bdd->query('SELECT * FROM article');
 			$id = 1;
 			foreach ($article as $value) {
@@ -123,7 +131,7 @@ else if($robert == 2){
 
 		if($robert == 5){
 		if(isset($_POST['titre'],$_POST['message'],$_POST['url']) AND $_POST['titre'] != "" AND $_POST['message'] != "" AND $_POST['url'] != ""){
-			$bdd = new PDO('mysql:host=localhost;dbname=face', 'root', '' );
+      $bdd = new PDO('mysql:host=localhost;dbname=face', 'root', '' );
 			$partenaire = $bdd->query('SELECT * FROM partenaire');
 			$id = 1;
 			foreach ($partenaire as $value) {
@@ -145,6 +153,18 @@ else if($robert == 2){
      	}
 		}
 	}
+
+
+		if($robert == 7){
+			if(isset($_POST['titre'],$_POST['contenu'],$_POST['url'])){
+			$bdd = new PDO('mysql:host=localhost;dbname=face', 'root', '' );
+			$action = $bdd->query('SELECT * FROM action');
+			$ajout_action = $bdd->prepare('INSERT INTO action(titre,url,contenu) VALUES (:titre,:url,:contenu)');
+			$ajout_action->execute(array('titre' => $_POST['titre'], 'url' => $_POST['url'], 'contenu' => $_POST['contenu']));
+			echo 'Nouvelle action ajoutée';
+			include ('ajout_action.php');
+			}
+		}
 
 
 ?>
