@@ -952,6 +952,7 @@ header{border-bottom: none;}}
 /*//////////////////////////////////////// ZONE ADMINISTRATEUR ///////////////////////////////////////////////////*/
 
 #titre-article{background:#2B888C;border: none; font-size: 20px; font-weight: bold;padding-left: 10px;color: white;}
+#action-url{background:#2B888C;border: none; font-size: 20px; font-weight: bold;padding-left: 10px;color: white; padding-right: 70px;}
 #contenu-article{background: #2B888C;border: none; font-size: 20px;font-weight: bold;padding-left: 10px;color: white;height: 200px; width:100%;}
 #button-submit{background: lightgrey;border: none; font-size: 20px;font-weight: bold;color:#2B888C;padding-left: 20px; padding-right: 20px;}
 #button-submit:hover{background: lightgrey; color:#2B888C;}
