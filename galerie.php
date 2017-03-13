@@ -35,11 +35,11 @@ include ('nav_mobile.html');
   </div>
   <div class="container">
     <div class="row">
-      <li id="galerie" class="col-lg-4 col-md-6 col-sm-12 col-xs-12"><img src="http://placehold.it/700x350" alt="" class="img-responsive" /></li>
-      <li id="galerie" class="col-lg-4 col-md-6 col-sm-12 col-xs-12"><img src="http://placehold.it/700x350" alt="" class="img-responsive" /></li>
-      <li id="galerie" class="col-lg-4 col-md-6 col-sm-12 col-xs-12"><img src="http://placehold.it/700x350" alt="" class="img-responsive" /></li>
-      <li id="galerie" class="col-lg-4 col-md-6 col-sm-12 col-xs-12"><img src="http://placehold.it/700x350" alt="" class="img-responsive" /></li>
-      <li id="galerie" class="col-lg-4 col-md-6 col-sm-12 col-xs-12"><img src="http://placehold.it/700x350" alt="" class="img-responsive" /></li>
+      <li id="galerie" class="col-lg-4 col-md-6 col-sm-12 col-xs-12"><img src="img/facelogo.jpg" alt="" class="img-responsive" /></li>
+      <li id="galerie" class="col-lg-4 col-md-6 col-sm-12 col-xs-12"><img src="img/facelogo.jpg" alt="" class="img-responsive" /></li>
+      <li id="galerie" class="col-lg-4 col-md-6 col-sm-12 col-xs-12"><img src="img/facelogo.jpg" alt="" class="img-responsive" /></li>
+      <li id="galerie" class="col-lg-4 col-md-6 col-sm-12 col-xs-12"><img src="img/facelogo.jpg" alt="" class="img-responsive" /></li>
+      <li id="galerie" class="col-lg-4 col-md-6 col-sm-12 col-xs-12"><img src="img/facelogo.jpg" alt="" class="img-responsive" /></li>
       <li id="galerie" class="col-lg-4 col-md-6 col-sm-12 col-xs-12"><img src="http://placehold.it/700x350" alt="" class="img-responsive" /></li>
       <li id="galerie" class="col-lg-4 col-md-6 col-sm-12 col-xs-12"><img src="http://placehold.it/700x350" alt="" class="img-responsive" /></li>
       <li id="galerie" class="col-lg-4 col-md-6 col-sm-12 col-xs-12"><img src="http://placehold.it/700x350" alt="" class="img-responsive" /></li>

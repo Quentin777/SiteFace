@@ -40,15 +40,8 @@ include ('nav_mobile.html');
                         </div> 
                 </div>
                 <div class="row">
-                        <a href="index.html"> <h2 class="h2page col-xs-8 col col-xs-offset-2 col-sm-6 col col-sm-offset-3 col-md-6 col col-md-offset-3 col-lg-6 col col-lg-offset-3 text-center" id="colorhistoire">Histoire</h2></a>
-                </div> 
-                <div class="row">
-                        <a href="index.html"> <h2 class="h2page col-xs-8 col col-xs-offset-2 col-sm-6 col col-sm-offset-3 col-md-6 col col-md-offset-3 col-lg-6 col col-lg-offset-3 text-center" id="colorcontact">Contact</h2></a> 
-                </div>
-                <div class="row">
-                        <a href="index.html" class=""> <h2 class="h2page col-xs-8 col col-xs-offset-2 col-sm-6 col col-sm-offset-3 col-md-6 col col-md-offset-3 col-lg-6 col col-lg-offset-3 text-center" id="colorpalmarès">Palmarès</h2></a> 
-                </div>
-                
+                        <a href="histoire.php"> <h2 class="h2page col-xs-8 col col-xs-offset-2 col-sm-6 col col-sm-offset-3 col-md-6 col col-md-offset-3 col-lg-6 col col-lg-offset-3 text-center" id="colorhistoire">Histoire</h2></a>
+                </div>         
         </div>
 
 </main>

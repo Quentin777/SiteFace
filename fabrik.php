@@ -76,7 +76,7 @@ include ('nav_mobile.html');
 		 		</div>
 		 		<div class="row" >
 		 			<div class="col-md-12"  id="LaFabrik_presentation">
-		 				<p>La Fabrik est une initiative créée en 2016 par l’association FACE Bourbonnais. Elle consiste en la formation de 23 apprenants à la formation web, aux profils hétéroclites, issus de différents horizons, milieu sociaux, et âges, dans le cœur du foyer périurbain moulinois.
+		 				<p>La Fabrik est une initiative créée en 2016 par l’association FACE Territoire Bourbonnais. Elle consiste en la formation de 23 apprenants à la formation web, aux profils hétéroclites, issus de différents horizons, milieu sociaux, et âges, dans le cœur du foyer périurbain moulinois.
 						Il s’agit avant tout d’une préparation à l’entrée dans le monde du travail. En effet, cette formation n’est pas certifiée par un diplôme, mais permet de nous introduire dans l’univers de la programmation web.</p>
 		 			</div>
 
@@ -86,10 +86,10 @@ include ('nav_mobile.html');
 		 			</div>
 		 		</div>
 		 	</div>
-		 	<iframe class="col-xs-0 col-sm-0 col-md-3 col-lg-3 facebook" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffacebook&tabs=timeline&width=270&height=600&small_header=false&adapt_container_width=true&hide_cover=true&show_facepile=false&appId" width="320px" height="500" style="border:none;overflow:hidden;" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+		 	<iframe class="col-xs-0 col-sm-0 col-md-3 col-lg-3 facebook" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Ffacebook.com%2Ffaceterritoirebourbonnais%2F&tabs=timeline&width=260&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="350" height="500" style="border:none;overflow:hidden" frameborder="0" allowTransparency="true"></iframe>
 
-			<a href="https://fr-fr.facebook.com/faceterritoirebourbonnais/" title="Facebook" class="btn btn-facebook btn-lg col-xs-12 col-sm-12 col-md-0 col-lg-0" id="face_button"><i class="fa fa-facebook fa-fw"></i> Facebook</a>
-			<a href="https://fr.linkedin.com/in/face-bourbonnais-845073131" title="Linkedin" class="btn btn-linkedin btn-lg col-xs-12 col-sm-12 col-md-0 col-lg-0" id="face_button"><i class="linkedin"></i> Linkedin</a>
+			 <a href="https://fr-fr.facebook.com/faceterritoirebourbonnais/" title="Facebook" class="btn btn-facebook btn-lg col-xs-12 col-sm-12 col-md-0 col-lg-0" id="face_button"><i class="fa fa-facebook fa-fw"></i> Facebook</a>
+         	 <a href="https://fr.linkedin.com/in/face-bourbonnais-845073131" title="Linkedin" class="btn btn-linkedin btn-lg col-xs-12 col-sm-12 col-md-0 col-lg-0" id="face_button"><i class="linkedin"></i> Linkedin</a>
 		</div>  
 	</div>
 	

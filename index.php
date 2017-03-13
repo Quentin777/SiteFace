@@ -12,10 +12,6 @@
   
       <link rel="stylesheet" href="css/style.css">
 
-   </head>
-   <body>
-    <audio preload="auto" src="sound/jecodeavecleculmp3" id="player_audio">
-    </audio>
 </head>
 
 <body>
@@ -30,17 +26,24 @@ include ('nav_mobile.html');
 ?>
 
 <main>
- 
+<div>
+  <div class="row-fluid">
+    <blockquote>
+      <h3 class="text-center"> FACE est une association qui lutte contre toutes formes d'exclusion .</h3>
+      <p><em>« Sans se substituer à la puissance publique, ni aux associations, la capacité des entreprises à accompagner l’accès à l’emploi, à la formation, aux biens et services essentiels, aux droits…   constitue un formidable levier d’insertion, d’inclusion et d’intégration. »</em></p>
+      <div class="text-right"> Gérard Mestrallet, Président de la Fondation FACE </div> 
+    </blockquote>
+  </div>
+</div>
   <div class="container">             <!--    ZONE PRINCIPAL DU SITE entre nav & footer -->
     <div class="row">
       <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9" style="font-size: 30px;"><img class="actu" src="img/actu.png" width="350" style="margin-bottom: 10px;" /></div> <!-- /// IMAGE "ACTUALITE" /// -->
         <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9" ">   <!-- zone actu -->
-          
           <div class="row">
            
             <?php 
     
-      $bdd = new PDO('mysql:host=localhost;dbname=face', 'root', '' );
+      $bdd = new PDO('mysql:host=localhost;dbname=c28ccb71c3', 'c28ccb71c3', 'd017e724c2' );
       $articles = $bdd->query('SELECT * FROM article'); 
       foreach ($articles as $value) {
           echo '<a href="article.php?numero='.$value[0].'"><div class="article col-xs-12 col-sm-6 col-md-6 col-lg-6">'; 
