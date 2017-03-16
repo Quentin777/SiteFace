@@ -94,11 +94,11 @@ header{
 	background: transparent;
 }*/
 
-header, footer, main, section, article, aside {
+header, main, section, article, aside {
 	padding: 2rem;
 }
 
-header, footer {
+header {
 	background-image: url(../img/face3.png);
 	border-top: 5px solid #27888F;
 	border-bottom: 5px solid #27888F;
@@ -106,11 +106,9 @@ header, footer {
 
 header{background-size: cover;}
 
-footer{ background-image: url(../img/face3.png); background-repeat: repeat; background-size: 100% 300px; }
-
 header, footer, main {
 	-webkit-transform: translate3d(0, 0, 0);
-					transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
 }
 
 header h1 {
@@ -216,7 +214,7 @@ body.nav_toggled nav {
 body.nav_toggled header, body.nav_toggled footer, body.nav_toggled main {
 	opacity: 0.8;
 	-webkit-transform: translate3d(200px, 0, 0);
-					transform: translate3d(200px, 0, 0);
+	transform: translate3d(200px, 0, 0);
 }
 
 main {
@@ -337,57 +335,14 @@ div.wrap_columns {
   animation: fadeInRight 1s;
   background-color: rgba(255,255,255, 1);
 }
-/*//////////////////  FOOTER //////////////*/
-footer{
-  padding-left: 0px;
-  background:#2B888C !important;
-}
-#ulFooter{
-	display: flex;
-	flex-direction: column;
-	text-align: center;
-	justify-content: center;
-	padding:0;
-	margin-left: -1.8em;
-	padding-bottom: 20px;
-	padding-top:10px;
-}
 
-#ulFooter ul{
-	list-style: none;
-	flex-direction: column;
-	margin-left:8px;
-	margin-right: 8px;
-	margin-top:15px;
-}
+/*=============================================
+=                   FOOTER                    =
+=============================================*/
 
-#ulFooter ul li a{
-    color:white;
-    text-decoration: none;
-}
-#ulFooter ul .firstLi a{
-    color:white;
-    font-size: 20px;
-    font-family: 'Julius Sans One', sans-serif;
-}
-.firstLi{
-	font-size: 20px;
-	margin-bottom: 8px;
-}
-#ulFooter ul li a:hover{
-		color:#26848B;
-}
-/*//////////////////MEDIA QUERY FOOTER//////////////*/
-@media screen and (min-width: 770px){
- #ulFooter{
-		flex-direction: row;
-		margin-left: -1.8em;
- }
- #ulFooter ul{
-	margin-top:0px;
- }
-}
-/*//////////// FIN DU FOOTER ///////////*/
+/* style ... */
+
+/*=============  Fin du footer  =============*/
 
 
 
