@@ -8,6 +8,11 @@
        <title> Les apprenants</title>
     </head>
   <body>
+  <!-- header -->
+  <?php 
+include ('nav_pc.html'); 
+include ('nav_mobile.html');
+?>
     <div class="container">
     <!--Profil de Andréa Lopez-->
     <div class="row">
