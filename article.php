@@ -1,4 +1,6 @@
-
+<?php
+include 'bdd.php';
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -51,7 +53,7 @@ include ('nav_mobile.html');
 
   <?php 
     if(isset($_GET['numero'])){
-      $bdd = new PDO('mysql:host=localhost;dbname=c28ccb71c3', 'c28ccb71c3', 'd017e724c2' );
+     
       $articles = $bdd->query('SELECT * FROM article');
       foreach ($articles as $value) {
         if($value[0] == $_GET['numero']){

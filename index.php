@@ -1,4 +1,5 @@
 <?php 
+include 'bdd.php';
 	if(session_status() == PHP_SESSION_NONE){
 		session_start();
 	}
@@ -58,7 +59,8 @@ include ('nav_mobile.html');
 					 
 						<?php 
 		
-			$bdd = new PDO('mysql:host=localhost;dbname=c28ccb71c3', 'c28ccb71c3', 'd017e724c2' );
+			
+			
 			$articles = $bdd->query('SELECT * FROM article'); 
 			foreach ($articles as $value) {
 					echo '<a href="article.php?numero='.$value[0].'"><div class="article col-xs-12 col-sm-6 col-md-6 col-lg-6">'; 
