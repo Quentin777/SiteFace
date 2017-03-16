@@ -35,45 +35,7 @@ include ('nav_mobile.html');
 			<h1 id="laFabrik"><span id="laFabrik_vert">L</span>a Fabrik</h1>
 		</div>
 		 	<div class=" col-xs-12 col-md-9 " id="laFabrik_fond">
-		 		<div class="row"  >
-		 			<div >
-		 				<img class="img-circle" id="photo_Face" src="img/trombinoscope/william.jpg" alt="">
-		 			</div>
-		 			<div>
-		 				<img class="img-circle" id="photo_Face" src="img/trombinoscope/andrea.jpg" alt="">
-		 			</div>
-		 			<div>
-		 				<img class="img-circle" id="photo_Face" src="img/trombinoscope/mickael.png" alt="">
-		 			</div>
-		 			<div>
-		 				<img class="img-circle" id="photo_Face" src="img/trombinoscope/eddy.jpg" alt="">
-		 			</div>
-		 			<div>
-		 				<img class="img-circle" id="photo_Face" src="img/trombinoscope/aymeric.jpg" alt="">
-		 			</div>
-		 			<div>
-		 				<img class="img-circle" id="photo_Face" src="img/trombinoscope/anthony.jpg" alt="">
-		 			</div>
-		 			<div>
-		 				<img class="img-circle" id="photo_Face" src="img/trombinoscope/kevin.jpg" alt="">
-		 			</div>
-		 			<div>
-		 				<img class="img-circle" id="photo_Face" src="img/trombinoscope/aude.jpg" alt="">
-					</div>
-					<div>
-		 				<img class="img-circle" id="photo_Face" src="img/trombinoscope/yves.jpg" alt="">
-
-		 			</div>
-		 			<div>
-		 				<img class="img-circle" id="photo_Face" src="img/trombinoscope/anthony.jpg" alt="">
-		 			</div>
-		 			<div>
-		 				<img class="img-circle" id="photo_Face" src="img/trombinoscope/kevin.jpg" alt="">
-		 			</div>
-		 			<div>
-		 				<img class="img-circle" id="photo_Face" src="img/trombinoscope/aude.jpg" alt="">
-					</div>
-		 		</div>
+		 		
 		 		<div class="row" >
 		 			<div class="col-md-12"  id="LaFabrik_presentation">
 		 				<p>La Fabrik est une initiative créée en 2016 par l’association FACE Territoire Bourbonnais. Elle consiste en la formation de 23 apprenants à la formation web, aux profils hétéroclites, issus de différents horizons, milieu sociaux, et âges, dans le cœur du foyer périurbain moulinois.
