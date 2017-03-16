@@ -53,3 +53,6 @@
     </li>
   </ul>
 </nav>
+<?php if(!isset($_SESSION["auth"])) : ?>
+<a href="admin.php" id="lien_connexion"><button>Connexion</button></a>
+<?php endif ?>
