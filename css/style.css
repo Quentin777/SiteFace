@@ -1120,5 +1120,45 @@ header{border-bottom: none;}}
 
 /*BOUTON CONNEXION */
 #lien_connexion{
-  color: black;
+  color: white;
+  font-weight: lighter;
+  font-size: 1.2em;
+}
+
+#lien_connexion button{
+	color: white;
+  	font-weight: lighter;
+  	font-size: 1em;
+  	background-color: #27888F;
+	border: none;
+	padding: 10px;
+	margin: 10px;
+	border-radius: 10px;
+	display: inline;
+}
+
+#bouton_ajout{
+	color: white;
+  	font-weight: lighter;
+  	font-size: 1em;
+  	background-color: #27888F;
+	border: none;
+	padding: 10px;
+	margin: 10px;
+	border-radius: 10px;
+	display: inline;
+}
+
+#form_action{
+	display: inline;
+	float: right;
+	margin-top: -75px;
+}
+
+@media screen and (max-width: 768px){ 
+	#form_action{
+		display: inline;
+		float: right;
+		margin-top: -150px;
+	}
 }
