@@ -1,3 +1,33 @@
+<?php
+	if(session_status() == PHP_SESSION_NONE){
+		session_start();
+	}
+	if(!isset($_SESSION["auth"])){
+		header ('location: index.php');	
+		exit();
+	}else{
+		if(isset($_POST['titre'],$_POST['message'],$_POST['url']) AND $_POST['titre'] != "" AND $_POST['message'] != "" AND $_POST['url'] != ""){
+     		$bdd = new PDO('mysql:host=localhost;dbname=c28ccb71c3', 'c28ccb71c3', 'd017e724c2');
+			$partenaire = $bdd->query('SELECT * FROM partenaire');
+			$id = 1;
+			foreach ($partenaire as $value) {
+				$id = $id +1;
+			}
+			$nom = $_FILES['image']['name'];
+			$retourLigne = str_replace(CHR(13).CHR(10),"</br>",$_POST['message']);
+			$ajout_partenaire = $bdd->prepare('INSERT INTO partenaire(choix_partenaire,titre,url,image,message) VALUES(:choix_partenaire,:titre,:url,:image,:message) ');
+			$ajout_partenaire->execute(array('choix_partenaire' => $_POST['choix_partenaire'], 'titre' => $_POST['titre'], 'url' => $_POST['url'],'image' => $nom, 'message' => $retourLigne));
+			$dossier = 'uploadPartenaire/';
+     		$fichier = $id . $_FILES['image']['name'];
+     		if(move_uploaded_file($_FILES['image']['tmp_name'], $dossier . $fichier)){
+				header ('location: partenariat.php');	
+				exit();
+			}else{
+				echo 'Echec de l\'upload !';
+     		}
+		}
+	}
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -31,7 +61,7 @@ include ('nav_mobile.html');
 <div class="container">             <!--    ZONE PRINCIPAL DU SITE entre nav & footer -->
     <div class="row">
     		<img src="img/admin.png" class="col-xs-12 col-sm-12 col-md-8 col-lg-8" height="50" id="img-admin">
-			<form class="col-xs-12 col-sm-12 col-md-12 col-lg-12" action="admin.php" method="post" enctype="multipart/form-data" id="form">
+			<form class="col-xs-12 col-sm-12 col-md-12 col-lg-12" action="" method="post" enctype="multipart/form-data" id="form">
 				<div class="container">           
     				<div class="row">
 

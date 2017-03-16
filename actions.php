@@ -1,3 +1,12 @@
+<?php 
+  if(session_status() == PHP_SESSION_NONE){
+    session_start();
+  }
+  if(isset($_POST["action"])){
+    header ('location: ajout_action.php');  
+    exit();
+  }
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -21,7 +30,11 @@
 		include ('nav_mobile.html');
 	?>
   
-
+<?php if(isset($_SESSION["auth"])) :?>
+  <form action="" method="post">
+    <button type="submit" name="action">Ajouter une action</button>
+  </form>
+<?php endif ?>
 	<main>
 	    <div class='container' id='presentation-container'>
 	        <div class="row">

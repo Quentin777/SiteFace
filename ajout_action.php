@@ -1,3 +1,20 @@
+<?php 
+  if(session_status() == PHP_SESSION_NONE){
+    session_start();
+  }
+  if(isset($_POST["action"])){
+    header ('location: actions.php');  
+    exit();
+  }
+  if(isset($_POST['titre'],$_POST['contenu'],$_POST['url'])){
+		$bdd = new PDO('mysql:host=localhost;dbname=c28ccb71c3', 'c28ccb71c3', 'd017e724c2');
+		$action = $bdd->query('SELECT * FROM action');
+		$ajout_action = $bdd->prepare('INSERT INTO action(titre,url,contenu) VALUES (:titre,:url,:contenu)');
+		$ajout_action->execute(array('titre' => $_POST['titre'], 'url' => $_POST['url'], 'contenu' => $_POST['contenu']));
+		echo 'Nouvelle action ajoutée';
+		include ('ajout_action.php');
+	}
+?>
 <!DOCTYPE html>
 <html>
 <head>

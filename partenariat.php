@@ -1,3 +1,13 @@
+<?php 
+  if(session_status() == PHP_SESSION_NONE){
+    session_start();
+  }
+  if(isset($_POST["partenaire"])){
+    header ('location: push_partenaire.php');  
+    exit();
+  }
+?>
+
 <!DOCTYPE html>
 <html >
 <head>
@@ -24,7 +34,11 @@
 include ('nav_pc.html'); 
 include ('nav_mobile.html');
 ?>
-  
+  <?php if(isset($_SESSION["auth"])) :?>
+  <form action="" method="post">
+    <button type="submit" name="partenaire">Ajouter un partenaire</button>
+  </form>
+<?php endif ?>
 <main>
 
   <div class='container'>
@@ -59,28 +73,6 @@ include ('nav_mobile.html');
             }
 
       ?>
-
-<!--      $tout = file('partenaires.txt');
-      $tableau = [];
-      foreach ($tout as $key => $value) {
-        $ligne = explode('%ICILALIMITE%', $value);
-        array_push($tableau, $ligne);
-      }
-      foreach ($tableau as $key => $valeur) {  
-              $key = $key+1; 
-              if($valeur[5] == "Associatif") {     
-              echo '<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="partenaire_div" style="margin-top: 20px;">';
-              echo '<a href="'.$valeur[3].'" id="href_partenaire">'; 
-              echo '<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3"> <img src="uploadPartenaire/'.$key.$valeur[2].'" width="120"></div>';
-              echo '<div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">'; 
-              echo '<h1>'.$valeur[0].'</h1>';
-              echo '<p>'.$valeur[1].'</p></div></div></a>';
-            }
-      } -->
-
-    
-
-          <!--            Debut vrais partenaires                 -->
 
               <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="partenaire_div" style="margin-top: 20px;">                     <!-- // ADMICAL // -->
               <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3"> <img src="img/partenaire/admical.jpg" width="150"></div>
@@ -212,24 +204,6 @@ include ('nav_mobile.html');
 
       ?>
 
-<!--      $tout = file('partenaires.txt');
-      $tableau = [];
-      foreach ($tout as $key => $value) {
-        $ligne = explode('%ICILALIMITE%', $value);
-        array_push($tableau, $ligne);
-      }
-      foreach ($tableau as $key => $valeur) {  
-              $key = $key+1; 
-              if($valeur[5] == "Entreprise") {     
-              echo '<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="partenaire_div" style="margin-top: 20px;">';
-              echo '<a href="'.$valeur[3].'" id="href_partenaire">'; 
-              echo '<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3"> <img src="uploadPartenaire/'.$key.$valeur[2].'" width="120"></div>';
-              echo '<div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">'; 
-              echo '<h1>'.$valeur[0].'</h1>';
-              echo '<p>'.$valeur[1].'</p></div></div></a>';
-            }
-      } -->
-      
 
               <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="partenaire_div" style="margin-top: 20px;">                     <!-- // ENGIE // -->
               <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3"> <img src="img/partenaire/engie.jpg" width="150"></div>
@@ -322,24 +296,7 @@ include ('nav_mobile.html');
 
       ?>
             
-    <!--  $tout = file('partenaires.txt');
-      $tableau = [];
-      foreach ($tout as $key => $value) {
-        $ligne = explode('%ICILALIMITE%', $value);
-        array_push($tableau, $ligne);
-      }
-      foreach ($tableau as $key => $valeur) {  
-              $key = $key+1; 
-              if($valeur[5] == "Institutionnel") {     
-              echo '<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="partenaire_div" style="margin-top: 20px;">';
-              echo '<a href="'.$valeur[3].'" id="href_partenaire">'; 
-              echo '<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3"> <img src="uploadPartenaire/'.$key.$valeur[2].'" width="120"></div>';
-              echo '<div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">'; 
-              echo '<h1>'.$valeur[0].'</h1>';
-              echo '<p>'.$valeur[1].'</p></div></div></a>';
-            }
-      } -->
-      
+  
           
               <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="partenaire_div" style="margin-top: 20px;">                     <!-- // comission europeene // -->
               <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3"> <img src="img/partenaire/comission.gif" width="150"></div>
