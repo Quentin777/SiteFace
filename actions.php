@@ -31,16 +31,18 @@ include 'bdd.php';
 		include ('nav_mobile.html');
 	?>
   
-<?php if(isset($_SESSION["auth"])) :?>
-  <form action="" method="post">
-    <button type="submit" name="action">Ajouter une action</button>
-  </form>
-<?php endif ?>
+
 	<main>
 	    <div class='container' id='presentation-container'>
 	        <div class="row">
 	            <div class="col-md-10 col col-md-offset-1" id="padding50">
-	                <h1 class="titre-h1" id="padding"><span id='presentation-span'><strong>A</strong></span>ctions</h1><hr>
+	                <h1 class="titre-h1" id="padding"><span id='presentation-span'><strong>A</strong></span>ctions</h1>
+	                <?php if(isset($_SESSION["auth"])) :?>
+					  <form action="" method="post" id="form_action">
+					    <button type="submit" name="action" id="bouton_ajout">Ajouter une action</button>
+					  </form>
+					<?php endif ?>
+	                
 	     <!-- <img src="">      image photoshop Actions_____  -->
 	                <div id="action-page" class="text-justify">
 	                <!--	<img src="http://www.iccrs.org/_files/images/page_en_construction.jpg">-->
