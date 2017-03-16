@@ -45,14 +45,16 @@ include ('nav_mobile.html');
 		</blockquote>
 	</div>
 </div>
-<?php if(isset($_SESSION["auth"])) :?>
-	<form action="" method="post">
-		<button type="submit" name="article">Ajouter un articke</button>
-	</form>
-<?php endif ?>
+
 	<div class="container">             <!--    ZONE PRINCIPAL DU SITE entre nav & footer -->
 		<div class="row">
-			<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9" style="font-size: 30px;"><img class="actu" src="img/actu.png" width="350" style="margin-bottom: 10px;" /></div> <!-- /// IMAGE "ACTUALITE" /// -->
+			<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9" style="font-size: 30px;"><img class="actu" src="img/actu.png" width="350" style="margin-bottom: 10px;" /></div> 
+			<?php if(isset($_SESSION["auth"])) :?>
+				<form action="" method="post" id="form_article">
+					<button type="submit" name="article" id='bouton_ajout' >Ajouter un article</button>
+				</form>
+			<?php endif ?>
+<!-- /// IMAGE "ACTUALITE" /// -->
 				<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9" "><!-- zone actu -->
 					<div class="row">
 					 

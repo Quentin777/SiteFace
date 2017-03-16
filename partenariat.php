@@ -34,11 +34,6 @@
 include ('nav_pc.html'); 
 include ('nav_mobile.html');
 ?>
-  <?php if(isset($_SESSION["auth"])) :?>
-  <form action="" method="post">
-    <button type="submit" name="partenaire">Ajouter un partenaire</button>
-  </form>
-<?php endif ?>
 <main>
 
   <div class='container'>
@@ -46,11 +41,15 @@ include ('nav_mobile.html');
       <div class="col-xs-0 col-sm-0 col-md-1 col-lg-1"></div>
       <div class="col-xs-12 col-sm-12 col-md-10 col-lg-10" id="politique_partenariat">
         <h1 class="h1page"><span id="green">L</span>a politique partenariale de FACE</h1>
-        <br>
+        <?php if(isset($_SESSION["auth"])) :?>
+          <form action="" method="post" id="form_article">
+            <button type="submit" name="partenaire" id='bouton_ajout'>Ajouter un partenaire</button>
+          </form>
+       <?php endif ?>
+            <br>
         <p> La Fondation FACE s’est engagée dès sa création dans un dialogue nourri et une démarche de co construction systématique avec l’ensemble des parties prenantes : c’est cet « ADN » qui préside depuis 1994 à la création des Clubs FACE et de ses autres structures de médiation et d’insertion, toujours nés d’une volonté commune des entreprises, des collectivités, et de l’ensemble des acteurs territoriaux.
         Cette volonté de maillage avec nos partenaires institutionnels, entreprises ou associations, est la clé de la conception et de la réalisation de nos projets, tant les politiques de lutte contre l’exclusion, les discriminations et la pauvreté nécessitent -au-delà d’une association systématique des bénéficiaires (salariés, habitants, jeunes en contrats d’alternance, services civiques…etc…)- l’implication de tous les acteurs.</p>
       </div>
-
       <div class="col-xs-0 col-sm-0 col-md-2 col-lg-2"></div>
       <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
         <a href="#text_association" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="association"></a>          <!--   // partenaire association fenetre // -->
