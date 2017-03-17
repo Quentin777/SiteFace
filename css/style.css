@@ -1,4 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One');
+
 html {
 	box-sizing: border-box;
 	font-size: 62.5%;
@@ -340,7 +342,85 @@ div.wrap_columns {
 =                   FOOTER                    =
 =============================================*/
 
-/* style ... */
+footer{
+	background: url(../img/footer_bg.jpg);
+	background-size: 100%;
+	background-position: center;
+	border-top: 4px solid #337D98;
+}
+
+footer p{
+	font-size: 14px;
+	line-height: 1.5;
+}
+
+footer #first_section{
+	background-color: #1F5D74;
+	mix-blend-mode: multiply;
+	padding-top: 3em;
+	padding-bottom: 3em;
+	color: #EEEEEE;
+}
+
+footer #first_section h2{
+	font-family: 'Fjalla One', sans-serif;
+	font-weight: 900;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	margin-bottom: 13px;
+}
+
+footer #first_section h2:after{
+	content: "";
+	position: absolute;
+	left: 0;
+	margin-top: 24px;
+	margin-left: 15px;
+	width: 15%;
+	opacity: 0.8;
+	border-bottom: 2px solid #80B9CF;
+}
+
+footer #first_section ul{
+	margin-top: 20px;
+}
+
+footer #first_section li a{
+	display: block;
+	font-size: 24px;
+	color: #EEEEEE;
+	text-align: center;
+	width: 47px;
+	height: 47px;
+	border-radius: 100%;
+	box-shadow: 0px 0px 3px 0px rgba(238,238,238,1);
+}
+
+footer #first_section .facebook_bg:hover{
+	background-color: #3B5998;
+}
+
+footer #first_section .twitter_bg:hover{
+	background-color: #4099FF;
+}
+
+footer #first_section .rss_bg:hover{
+	background-color: #FF6600;
+}
+
+footer #first_section li .fa{
+	position: relative;
+	top: 6px;
+}
+
+
+footer #last{
+	background-color: #1D4B58;
+	mix-blend-mode: multiply;
+	color: #FFFFFF;
+	line-height: 50px;
+}
+
 
 /*=============  Fin du footer  =============*/
 
