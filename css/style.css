@@ -396,6 +396,15 @@ footer #first_section li a{
 	box-shadow: 0px 0px 3px 0px rgba(238,238,238,1);
 }
 
+footer #first_section li a:hover{
+	transform: rotateZ(360deg) scale(1.2);
+}
+
+footer #first_section li .fa{
+	position: relative;
+	top: 6px;
+}
+
 footer #first_section .facebook_bg:hover{
 	background-color: #3B5998;
 }
@@ -407,12 +416,6 @@ footer #first_section .twitter_bg:hover{
 footer #first_section .rss_bg:hover{
 	background-color: #FF6600;
 }
-
-footer #first_section li .fa{
-	position: relative;
-	top: 6px;
-}
-
 
 footer #last{
 	background-color: #1D4B58;
