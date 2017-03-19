@@ -413,26 +413,18 @@ footer #first_section #info-social li a{
 	transition: all 0.5s cubic-bezier(0.18, 0.89, 0.32, 1.28);
 }
 
-footer #first_section #info-social li a:hover{
-	transform: rotateZ(360deg) scale(1.2);
-}
+footer #first_section #info-social li a:hover{transform: rotateZ(360deg) scale(1.2);}
 
 footer #first_section #info-social li .fa{
 	position: relative;
 	top: 6px;
 }
 
-footer #first_section #info-social .facebook_bg:hover{
-	background-color: #3B5998;
-}
+footer #first_section #info-social .facebook_bg:hover{background-color: #3B5998;}
 
-footer #first_section #info-social .twitter_bg:hover{
-	background-color: #4099FF;
-}
+footer #first_section #info-social .twitter_bg:hover{background-color: #4099FF;}
 
-footer #first_section #info-social .rss_bg:hover{
-	background-color: #FF6600;
-}
+footer #first_section #info-social .rss_bg:hover{background-color: #FF6600;}
 
 /* Bloc milieu */
 
@@ -450,9 +442,7 @@ footer #first_section #contact div span{
 	margin-right: 1em;
 }
 
-footer #first_section #contact div div.text{
-	display: block;
-}
+footer #first_section #contact div div.text{display: block;}
 
 /* Bloc droite */
 
@@ -466,10 +456,7 @@ footer #first_section #newsletter .form-control{
 	box-shadow: none;
 }
 
-footer #first_section #newsletter .input-group-btn{
-	width: auto;
-}
-
+footer #first_section #newsletter .input-group-btn{width: auto;}
 
 footer #first_section #newsletter .btn{
 	background: #243c4f;
@@ -481,6 +468,8 @@ footer #first_section #newsletter .btn{
 	width: auto;
 }
 
+footer #first_section #newsletter .btn:hover{background: #317DB9;}
+
 footer #first_section #newsletter p.small{
 	opacity: 0.7;
 	font-size: 10px;
@@ -491,13 +480,29 @@ footer #first_section #newsletter p.small{
 
 /* ----------- DEUXIÈME SECTION ------------ */
 
-footer #last{
+footer #second_section{
 	background-color: #1D4B58;
 	mix-blend-mode: multiply;
-	color: #FFFFFF;
-	line-height: 50px;
+	color: rgba(238, 238, 238, 0.6);
+	padding-top: 15px;
+	padding-bottom: 15px;
 }
 
+footer #second_section a{
+	font-size: 14px;
+	color: rgba(238, 238, 238, 0.6);
+}
+
+footer #second_section #link{
+	text-align: right;
+}
+
+footer #second_section #link .separator{
+	padding-left: 10px;
+	padding-right: 10px;
+	font-size: 16px;
+	color: rgba(238, 238, 238, 0.2);
+}
 
 /*=============  Fin du footer  =============*/
 
