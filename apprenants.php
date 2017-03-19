@@ -9,8 +9,10 @@ include 'bdd.php';
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">
-        <link href="css/bootstrap.css" rel="stylesheet"> 
        <title> Les apprenants</title>
     </head>
   <body>
@@ -486,40 +488,6 @@ include ('nav_mobile.php');
 </div>
 </div>
 <!--Pied de page-->
-<footer>
-
-<ul id="ulFooter">
-     <ul> 
-          <li class="firstLi"><a href="index.php">Accueil</a></li>
-          <li><a href="index.php">Fil d'Actualité</a></li>
-          <li><a href="index.php">Réseaux Sociaux</a></li>
-          <li><a href="index.php">Agenda</a></li>
-     </ul>
-     <ul>
-          <li class="firstLi"><a href="presentation.php">Présentation</a></li>
-          <li><a href="histoire.php">Histoire</a></li>
-     </ul>
-     <ul>
-          <li class="firstLi"><a href="index.php">Partenariat</a></li>
-          <li><a href="partenariat.php#text_entreprise">Les Entreprises</a></li>
-          <li><a href="partenariat.php#text_association">Les Associations</a></li>
-          <li><a href="partenariat.php#text_institution">Les Institutions</a></li>
-     </ul>
-     <ul>
-          <li class="firstLi"><a href="index.php">La Fabrik</a></li>
-     </ul>
-     <ul>
-          <li class="firstLi"><a href="Mentions.php">Mentions légales</a></li>
-<!--           <li><a href="#">Page 1-1</a></li>
-          <li><a href="#">Page 1-2</a></li> -->
-     </ul>
-     <ul>
-          <li class="firstLi"><a href="actions.php">Actions</a></li>
-     </ul>
-     <ul>
-           <li class="firstLi"><a href="contact.php">Contact</a></li>
-     </ul>
-</ul>
-</footer>
+<?php include ('footer.html') ?>
     </body>
   </html>
