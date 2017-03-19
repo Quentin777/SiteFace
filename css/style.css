@@ -1,4 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One');
+
 html {
 	box-sizing: border-box;
 	font-size: 62.5%;
@@ -94,11 +96,11 @@ header{
 	background: transparent;
 }*/
 
-header, footer, main, section, article, aside {
+header, main, section, article, aside {
 	padding: 2rem;
 }
 
-header, footer {
+header {
 	background-image: url(../img/face3.png);
 	border-top: 5px solid #27888F;
 	border-bottom: 5px solid #27888F;
@@ -106,11 +108,9 @@ header, footer {
 
 header{background-size: cover;}
 
-footer{ background-image: url(../img/face3.png); background-repeat: repeat; background-size: 100% 300px; }
-
 header, footer, main {
 	-webkit-transform: translate3d(0, 0, 0);
-					transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
 }
 
 header h1 {
@@ -216,7 +216,7 @@ body.nav_toggled nav {
 body.nav_toggled header, body.nav_toggled footer, body.nav_toggled main {
 	opacity: 0.8;
 	-webkit-transform: translate3d(200px, 0, 0);
-					transform: translate3d(200px, 0, 0);
+	transform: translate3d(200px, 0, 0);
 }
 
 main {
@@ -337,57 +337,189 @@ div.wrap_columns {
   animation: fadeInRight 1s;
   background-color: rgba(255,255,255, 1);
 }
-/*//////////////////  FOOTER //////////////*/
+
+/*=============================================
+=                                             =
+=                   FOOTER                    =
+=                                             =
+=============================================*/
+
 footer{
-  padding-left: 0px;
-  background:#2B888C !important;
-}
-#ulFooter{
-	display: flex;
-	flex-direction: column;
-	text-align: center;
-	justify-content: center;
-	padding:0;
-	margin-left: -1.8em;
-	padding-bottom: 20px;
-	padding-top:10px;
+	background: url(../img/footer_bg.jpg);
+	background-size: 100%;
+	background-position: top;
+	border-top: 4px solid #337D98;
 }
 
-#ulFooter ul{
-	list-style: none;
-	flex-direction: column;
-	margin-left:8px;
-	margin-right: 8px;
-	margin-top:15px;
+footer p{
+	font-size: 14px;
+	line-height: 1.5;
 }
 
-#ulFooter ul li a{
-    color:white;
-    text-decoration: none;
+footer p.bottom-space{
+	margin-bottom: 2em;
 }
-#ulFooter ul .firstLi a{
-    color:white;
-    font-size: 20px;
-    font-family: 'Julius Sans One', sans-serif;
+
+/* ----------- PREMIÈRE SECTION ------------ */
+
+footer #first_section{
+	background-color: #1F5D74;
+	mix-blend-mode: multiply;
+	padding-top: 3em;
+	padding-bottom: 3em;
+	color: #EEEEEE;
 }
-.firstLi{
+
+footer #first_section h2{
+	font-family: 'Fjalla One', sans-serif;
+	font-weight: 900;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	margin-bottom: 13px;
+	font-size: 2rem;
+}
+
+footer #first_section h2:after{
+	content: "";
+	position: absolute;
+	left: 0;
+	margin-top: 24px;
+	margin-left: 15px;
+	width: 15%;
+	opacity: 0.8;
+	border-bottom: 2px solid #80B9CF;
+}
+
+/* Bloc gauche */
+
+footer #first_section #info-social ul{
+	margin-top: 20px;
+	margin-left: 1px;
+}
+
+footer #first_section #info-social .list-inline li{
+	padding-right: 1em;
+	padding-left: 0px;
+}
+
+footer #first_section #info-social li a{
+	display: block;
 	font-size: 20px;
-	margin-bottom: 8px;
+	color: #EEEEEE;
+	text-align: center;
+	width: 40px;
+	height: 40px;
+	border-radius: 100%;
+	box-shadow: 0px 0px 3px 0px rgba(238,238,238,1);
+	transition: all 0.5s cubic-bezier(0.18, 0.89, 0.32, 1.28);
 }
-#ulFooter ul li a:hover{
-		color:#26848B;
+
+footer #first_section #info-social li a:hover{transform: rotateZ(360deg) scale(1.2);}
+
+footer #first_section #info-social li .fa{
+	position: relative;
+	top: 6px;
 }
-/*//////////////////MEDIA QUERY FOOTER//////////////*/
-@media screen and (min-width: 770px){
- #ulFooter{
-		flex-direction: row;
-		margin-left: -1.8em;
- }
- #ulFooter ul{
-	margin-top:0px;
- }
+
+footer #first_section #info-social .facebook_bg:hover{background-color: #3B5998;}
+
+footer #first_section #info-social .twitter_bg:hover{background-color: #4099FF;}
+
+footer #first_section #info-social .rss_bg:hover{background-color: #FF6600;}
+
+/* Bloc milieu */
+
+footer #first_section #contact div{
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: row;
+	align-items: center;
+	margin-bottom: 0.5em;
 }
-/*//////////// FIN DU FOOTER ///////////*/
+
+footer #first_section #contact div span{
+	color: rgba(29, 75, 88, 0.5);
+	font-size: 20px;
+	margin-right: 1em;
+}
+
+footer #first_section #contact div div.text{display: block;}
+
+/* Bloc droite */
+
+footer #first_section #newsletter .form-control{
+	background: #1D4B58;
+	border: transparent;
+	border-radius: 5px 0 0 5px;
+	height: 4em;
+	color: #EEEEEE;
+	font-size: 12px;
+	box-shadow: none;
+}
+
+footer #first_section #newsletter .btn{
+	background: #243c4f;
+	border-radius: 0 5px 5px 0;
+	color: #EEEEEE;
+	font-size: 12px;
+	font-weight: 900;
+	text-transform: uppercase;
+	width: auto;
+	height: 4em;
+	transition: all 0.2s ease-in;
+}
+
+footer #first_section #newsletter .btn:hover{background: #317DB9;}
+
+footer #first_section #newsletter p.small{
+	opacity: 0.7;
+	font-size: 10px;
+	font-style: italic;
+	margin-top: 2em;
+}
+
+
+/* ----------- DEUXIÈME SECTION ------------ */
+
+footer #second_section{
+	background-color: #1D4B58;
+	mix-blend-mode: multiply;
+	color: rgba(238, 238, 238, 0.6);
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+footer #second_section a{
+	font-size: 14px;
+	font-weight: normal;
+	color: rgba(238, 238, 238, 0.6);
+}
+
+footer #second_section #link{
+	text-align: right;
+}
+
+footer #second_section #link .separator{
+	padding-left: 10px;
+	padding-right: 10px;
+	font-size: 16px;
+	color: rgba(238, 238, 238, 0.2);
+}
+
+/* --------- PARAMÈTRES RESPONSIVE ---------- */
+
+@media screen and (max-width: 991px){
+	footer{
+		background-repeat: no-repeat;
+		background-position: bottom;
+	}
+	footer #first_section #contact h2{margin-top: 20px;}
+	footer #first_section #newsletter h2{margin-top: 20px;}
+	footer #second_section p{text-align: center;}
+	footer #second_section #link{text-align: center;}
+}
+
+/*=============  Fin du footer  =============*/
 
 
 
