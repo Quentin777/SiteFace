@@ -20,7 +20,7 @@
   
 <?php 
 include ('nav_pc.html'); 
-include ('nav_mobile.html');
+include ('nav_mobile.php');
 ?>
   
 

@@ -1,4 +1,5 @@
 <?php 
+include 'bdd.php';
   if(session_status() == PHP_SESSION_NONE){
     session_start();
   }
@@ -27,6 +28,7 @@
 <body>
   <header>
   <a href='#' id='nav_show' title='Show The Navigation'>Menu</a>
+  <button id="don">Faire un don</button>
    <div id="logo"><img src="img/logo-face.png" width="160"/></div>
 </header>
   
@@ -58,7 +60,7 @@ include ('nav_mobile.html');
           <div class="row">
 
           <?php
-      $bdd = new PDO('mysql:host=localhost;dbname=c28ccb71c3', 'c28ccb71c3', 'd017e724c2');
+      
             $articles = $bdd->query('SELECT * FROM partenaire');
             foreach ($articles as $key => $value) {
               if($value[1] == "Associatif"){
@@ -188,7 +190,7 @@ include ('nav_mobile.html');
 
             
             <?php
-      $bdd = new PDO('mysql:host=localhost;dbname=c28ccb71c3', 'c28ccb71c3', 'd017e724c2');
+      ;
             $articles = $bdd->query('SELECT * FROM partenaire');
             foreach ($articles as $key => $value) {
               if($value[1] == "Entreprise"){
@@ -280,7 +282,7 @@ include ('nav_mobile.html');
 
           
             <?php
-      $bdd = new PDO('mysql:host=localhost;dbname=c28ccb71c3', 'c28ccb71c3', 'd017e724c2');
+      
             $articles = $bdd->query('SELECT * FROM partenaire');
             foreach ($articles as $key => $value) {
               if($value[1] == "Institutionnel"){

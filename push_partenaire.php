@@ -1,4 +1,5 @@
 <?php
+include 'bdd.php';
 	if(session_status() == PHP_SESSION_NONE){
 		session_start();
 	}
@@ -7,7 +8,7 @@
 		exit();
 	}else{
 		if(isset($_POST['titre'],$_POST['message'],$_POST['url']) AND $_POST['titre'] != "" AND $_POST['message'] != "" AND $_POST['url'] != ""){
-     		$bdd = new PDO('mysql:host=localhost;dbname=c28ccb71c3', 'c28ccb71c3', 'd017e724c2');
+     		
 			$partenaire = $bdd->query('SELECT * FROM partenaire');
 			$id = 1;
 			foreach ($partenaire as $value) {

@@ -1252,7 +1252,7 @@ header{border-bottom: none;}}
 
 /*BOUTON CONNEXION */
 #lien_connexion{
-<<<<<<< HEAD
+
   color: black;
 }
 /* CSS PAGE LES APPRENNANTS */
@@ -1306,7 +1306,7 @@ small {
   
 
 @media screen and (max-width: 640px) {
-=======
+
   color: white;
   font-weight: lighter;
   font-size: 1.2em;
@@ -1349,4 +1349,22 @@ small {
 		margin-top: -150px;
 	}
 }
->>>>>>> def04bdb1c721ee637ebbc0f99ed63a6262fd745
+
+
+#don{
+	padding: 5px;
+	font-size: 1em;
+	font-weight: bolder;
+	color: white;
+	background-color: orange;
+	border: 2px solid darkorange;
+	transition : 0.2s;
+	border-radius: 10px;
+}
+
+#don:hover{
+	background-color : #E0E0E0;
+	color :  orange;
+	transition :  0.2s;
+}
+

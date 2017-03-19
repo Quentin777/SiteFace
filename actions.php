@@ -1,4 +1,5 @@
 <?php 
+include 'bdd.php';
   if(session_status() == PHP_SESSION_NONE){
     session_start();
   }
@@ -22,12 +23,13 @@
 <body>
   	<header class="bluebandeauseparateur">
  		<a href='#' id='nav_show' title='Show The Navigation'>Menu</a>
+ 		<button id="don">Faire un don</button>
    		<div id="logo"><img src="img/logo-face.png" width="160"/></div>
 	</header>
   
 	<?php 
 		include ('nav_pc.html'); 
-		include ('nav_mobile.html');
+		include ('nav_mobile.php');
 	?>
   
 
@@ -72,7 +74,8 @@
 							$facebook_right = '&show_text=0&width=560" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>';
 							$youtube_left = '<iframe width="560" height="315" class="center-block" src="https://www.youtube.com/embed/';
 							$youtube_right = '" frameborder="0" allowfullscreen></iframe>';
-		$bdd = new PDO('mysql:host=localhost;dbname=c28ccb71c3', 'c28ccb71c3', 'd017e724c2' );							$action = $bdd->query('SELECT * FROM action');
+									
+						$action = $bdd->query('SELECT * FROM action');
 							foreach ($action as $value) {
 								$site = explode('.', $value[3]);
 								if($site[1] == 'facebook'){

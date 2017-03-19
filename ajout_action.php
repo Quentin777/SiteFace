@@ -1,4 +1,5 @@
 <?php 
+include 'bdd.php';
   if(session_status() == PHP_SESSION_NONE){
     session_start();
   }
@@ -7,7 +8,7 @@
     exit();
   }
   if(isset($_POST['titre'],$_POST['contenu'],$_POST['url'])){
-		$bdd = new PDO('mysql:host=localhost;dbname=c28ccb71c3', 'c28ccb71c3', 'd017e724c2');
+		
 		$action = $bdd->query('SELECT * FROM action');
 		$ajout_action = $bdd->prepare('INSERT INTO action(titre,url,contenu) VALUES (:titre,:url,:contenu)');
 		$ajout_action->execute(array('titre' => $_POST['titre'], 'url' => $_POST['url'], 'contenu' => $_POST['contenu']));
@@ -35,12 +36,13 @@
 
 <header>
    <a href='#' id='nav_show' title='Show The Navigation'>Menu</a>
+   <button id="don">Faire un don</button>
    <div id="logo"><img src="img/logo-face.png" width="160"/></div>
 </header>
 
 <?php 
 include ('nav_pc.html'); 
-include ('nav_mobile.html');
+include ('nav_mobile.php');
 ?>
 
 
