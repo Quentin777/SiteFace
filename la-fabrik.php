@@ -1,3 +1,10 @@
+<?php 
+include 'bdd.php';
+  if(session_status() == PHP_SESSION_NONE){
+    session_start();
+  }
+
+?>
 <!DOCTYPE html>
 <html >
 <head>
@@ -16,12 +23,13 @@
 <body>
   <header>
 <a href='#' id='nav_show' title='Show The Navigation'>Menu</a>
+<button id="don">Faire un don</button>
    <div id="logo"><img src="img/logo-face.png" width="160"/></div>
 </header>
   
 <?php 
 include ('nav_pc.html'); 
-include ('nav_mobile.html');
+include ('nav_mobile.php');
 ?>
   
 <main>

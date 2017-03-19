@@ -1,4 +1,10 @@
-<!DOCTYPE html>
+<?php 
+include 'bdd.php';
+  if(session_status() == PHP_SESSION_NONE){
+    session_start();
+  }
+
+?><!DOCTYPE html>
   <html>
     <head>
         <meta charset="utf-8">
@@ -11,7 +17,7 @@
   <!-- header -->
   <?php 
 include ('nav_pc.html'); 
-include ('nav_mobile.html');
+include ('nav_mobile.php');
 ?>
     <div class="container">
     <!--Profil de Andréa Lopez-->
