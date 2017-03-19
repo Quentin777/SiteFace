@@ -376,6 +376,7 @@ footer #first_section h2{
 	letter-spacing: 2px;
 	text-transform: uppercase;
 	margin-bottom: 13px;
+	font-size: 2rem;
 }
 
 footer #first_section h2:after{
@@ -456,8 +457,6 @@ footer #first_section #newsletter .form-control{
 	box-shadow: none;
 }
 
-footer #first_section #newsletter .input-group-btn{width: auto;}
-
 footer #first_section #newsletter .btn{
 	background: #243c4f;
 	border-radius: 0 5px 5px 0;
@@ -466,6 +465,8 @@ footer #first_section #newsletter .btn{
 	font-weight: 900;
 	text-transform: uppercase;
 	width: auto;
+	height: 4em;
+	transition: all 0.2s ease-in;
 }
 
 footer #first_section #newsletter .btn:hover{background: #317DB9;}
@@ -490,6 +491,7 @@ footer #second_section{
 
 footer #second_section a{
 	font-size: 14px;
+	font-weight: normal;
 	color: rgba(238, 238, 238, 0.6);
 }
 
@@ -502,6 +504,19 @@ footer #second_section #link .separator{
 	padding-right: 10px;
 	font-size: 16px;
 	color: rgba(238, 238, 238, 0.2);
+}
+
+/* --------- PARAMÈTRES RESPONSIVE ---------- */
+
+@media screen and (max-width: 991px){
+	footer{
+		background-repeat: no-repeat;
+		background-position: bottom;
+	}
+	footer #first_section #contact h2{margin-top: 20px;}
+	footer #first_section #newsletter h2{margin-top: 20px;}
+	footer #second_section p{text-align: center;}
+	footer #second_section #link{text-align: center;}
 }
 
 /*=============  Fin du footer  =============*/
